@@ -1,0 +1,43 @@
+<DockSiteLayout xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SerializationFormat="ToolWindowsOnly" Version="2">
+	<AutoHideHost>
+		<AutoHideTabStrip Side="Right">
+			<ToolWindowContainer DockedSize="350,0" SelectedWindowUniqueId="ecf3b102-c103-441e-ba6f-fa6d0388212c">
+				<UIElement xsi:type="ToolWindowRef" UniqueId="ecf3b102-c103-441e-ba6f-fa6d0388212c" />
+			</ToolWindowContainer>
+		</AutoHideTabStrip>
+	</AutoHideHost>
+	<Content xsi:type="SplitContainer" Orientation="Horizontal" DockedSize="536,562">
+		<UIElement xsi:type="ToolWindowContainer" DockedSize="330,0" SelectedWindowUniqueId="72a9b7df-a092-4c7d-8f51-a625af8a1aec">
+			<UIElement xsi:type="ToolWindowRef" UniqueId="72a9b7df-a092-4c7d-8f51-a625af8a1aec" />
+			<UIElement xsi:type="ToolWindowRef" UniqueId="8c0a017b-4496-49e6-bfd9-7011898d59fa" />
+			<UIElement xsi:type="ToolWindowRef" UniqueId="f4e8f210-6a26-4923-9cf9-fb1d93c84efd" />
+			<UIElement xsi:type="ToolWindowRef" UniqueId="05d0570c-f331-4814-ac85-2896704ec963" />
+			<UIElement xsi:type="ToolWindowRef" UniqueId="288a80bc-7f6e-4249-9dee-e0d85b255c08" />
+		</UIElement>
+		<UIElement xsi:type="SplitContainer" Orientation="Vertical" DockedSize="200,562">
+			<UIElement xsi:type="ToolWindowContainer" SelectedWindowUniqueId="e8de3cbb-393f-48c8-bbf8-1aba1cfa29d7">
+				<UIElement xsi:type="ToolWindowRef" UniqueId="e8de3cbb-393f-48c8-bbf8-1aba1cfa29d7" />
+			</UIElement>
+			<UIElement xsi:type="Workspace">
+				<Content xsi:type="TabbedMdiHost">
+					<Content xsi:type="TabbedMdiContainer" SelectedWindowUniqueId="9c605350-1cfe-4957-89e5-e296fbf9b3d7" />
+				</Content>
+			</UIElement>
+			<UIElement xsi:type="ToolWindowContainer" DockedSize="200,150" SelectedWindowUniqueId="9ab702ca-16cc-4c5d-9176-cff41f3da1af">
+				<UIElement xsi:type="ToolWindowRef" UniqueId="9ab702ca-16cc-4c5d-9176-cff41f3da1af" />
+				<UIElement xsi:type="ToolWindowRef" UniqueId="d454fcdc-8fad-4364-8372-9c785c813b50" />
+			</UIElement>
+		</UIElement>
+	</Content>
+	<ToolWindows>
+		<ToolWindow UniqueId="72a9b7df-a092-4c7d-8f51-a625af8a1aec" Name="ProjectExplorerWindow" ContainerDockedSize="330,0" IsOpen="true" State="Docked" />
+		<ToolWindow UniqueId="8c0a017b-4496-49e6-bfd9-7011898d59fa" Name="RepositoryExplorerWindow" IsOpen="true" State="Docked" />
+		<ToolWindow UniqueId="f4e8f210-6a26-4923-9cf9-fb1d93c84efd" Name="ActivityLibraryExplorerWindow" IsOpen="true" State="Docked" />
+		<ToolWindow UniqueId="05d0570c-f331-4814-ac85-2896704ec963" Name="DocumentOutlineWindow" IsOpen="true" State="Docked" />
+		<ToolWindow UniqueId="288a80bc-7f6e-4249-9dee-e0d85b255c08" Name="ToolboxWindow" IsOpen="true" State="Docked" />
+		<ToolWindow UniqueId="e8de3cbb-393f-48c8-bbf8-1aba1cfa29d7" Name="RpaModelerWindow" IsOpen="true" State="Docked" />
+		<ToolWindow UniqueId="9ab702ca-16cc-4c5d-9176-cff41f3da1af" Name="ScriptrunresultsWindow" ContainerDockedSize="200,150" IsOpen="true" State="Docked" />
+		<ToolWindow UniqueId="d454fcdc-8fad-4364-8372-9c785c813b50" Name="ProcessStatusWindow" ContainerDockedSize="200,150" IsOpen="true" State="Docked" />
+		<ToolWindow UniqueId="ecf3b102-c103-441e-ba6f-fa6d0388212c" Name="PropertiesWindow" ContainerDockedSize="350,0" IsOpen="true" State="AutoHide" />
+	</ToolWindows>
+</DockSiteLayout>

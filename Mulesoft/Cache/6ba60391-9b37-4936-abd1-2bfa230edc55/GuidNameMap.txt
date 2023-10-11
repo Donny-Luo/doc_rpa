@@ -1,0 +1,16 @@
+This is a temporary file for debug purposes only
+List of workflows used in Business Process 'Batch Document Uploader' (6ba60391-9b37-4936-abd1-2bfa230edc55), as of: 11/1/2022 6:09:51 PM
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Activity Name                            | [Element id in BPMN]      | [Workflow ID]                         | [Workflow Revision ID]                | [Reference type]
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Access Looker                            | ServiceTask_4MEvgqc41O    | 4c4d49ac-d76a-47f4-b191-724a7e35662c  | 4338aeff-e98a-4033-ab38-7e10ff63314f  | local
+| Send Error Notifiacation                 | Activity_1kurozq          | 4d5559e9-fff7-4bcd-a90b-ad1ccf6099e9  | 0403886d-6b21-4ec5-8dd8-5600ae0a0d78  | local
+| Read Excel File                          | Activity_007ww5s          | 466db0bd-88ea-4cef-be70-7a19cb9ad934  | 79998d4a-0247-4c8a-9b54-e145dd0c7094  | local
+| Send Error Notifiaction                  | Activity_1475pkt          | 7a7f0f36-7b06-4829-9540-6bcdfeee5ff6  | 73145f0f-1882-41c6-bdef-2434c6bb3a3c  | local
+| Clear Excel Files                        | Activity_1yr4b1w          | 6b160961-b1c0-4874-a8dc-5c8749b78207  | 95590195-1e31-41a1-aa5e-8d5c95b7b4fa  | local
+| Upload Document                          | Activity_191i0a0          | d6d5cd67-e0d2-422d-a95a-1b49705cb3b2  | b6571fa8-ed63-4b3f-85c3-7c12411a1505  | local
+| Clear Excel FIles                        | Activity_0264jpp          | 27124c57-7e1d-488c-af20-9147961c433c  | a9cc7b61-dc4a-49a8-a5c0-6ae7a5f49fe3  | local
+| Send Error Notification                  | Activity_1htagrq          | 99ce9a19-c498-42fc-a704-523ef8dce7a8  | 8037d69a-eadc-461b-a39b-8acafee2ac7c  | local
+| Test                                     | Activity_01hmwvn          | a5398f72-42f3-424b-958f-3488ca62081e  | 4d5ab933-ae8c-4777-befd-0deaf2a48923  | local
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------

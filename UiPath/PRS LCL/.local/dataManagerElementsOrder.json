@@ -1,0 +1,32 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DataTable_Queue_Table&Sequence_1",
+        "ExtractDataTable&Sequence_1",
+        "cny000&Sequence_1",
+        "hkd000&Sequence_1",
+        "blank_bill&Sequence_1",
+        "Current_Time&Sequence_1",
+        "RPA_Result&Sequence_1",
+        "TODAY&Sequence_2",
+        "TODAY_2&Sequence_2",
+        "count&Sequence_28",
+        "Record&Sequence_31"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

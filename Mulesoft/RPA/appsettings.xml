@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CurrentUserSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ThemeString>OfficeBlue</ThemeString>
+  <WorkflowTypeDefault>0</WorkflowTypeDefault>
+  <OnlineManualLanguage>0</OnlineManualLanguage>
+  <GeneralTimeout>45</GeneralTimeout>
+  <ShowSystemInfoDialog>false</ShowSystemInfoDialog>
+  <ShowWorkflowRunProtocol>false</ShowWorkflowRunProtocol>
+  <ShowActionStepDescriptions>true</ShowActionStepDescriptions>
+  <OpenLastWorkflowOnStart>false</OpenLastWorkflowOnStart>
+  <AutosaveActive>false</AutosaveActive>
+  <TimeBetweenAutosavings>5</TimeBetweenAutosavings>
+  <AutosaveOnScriptRun>true</AutosaveOnScriptRun>
+  <AutoConnect>true</AutoConnect>
+  <Host>flexportrpa.rpa.mulesoft.com</Host>
+  <UserName>cassie.yang@flexport.com</UserName>
+  <SavePassword>true</SavePassword>
+  <UseHttps>true</UseHttps>
+  <SettingsVersionString>6.0.15086.1</SettingsVersionString>
+  <Password />
+  <PasswordCrypt>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAB3IF9cSDJ0WHhvPrmUxPkwAAAAACAAAAAAAQZgAAAAEAACAAAAA1gVWwsV1yXgKpRc3XkY0RAlhOoNPXV9n8lfa7Z9bPPgAAAAAOgAAAAAIAACAAAAAQiLc0H+HPbhFg9dA/KvGm9QKDjebR8TpZ3hA0y9B2JSAAAAAAcBIWBLJsR8rbU4zJeofH4gatqs3XCC19COii7WyuhEAAAABKMG6ElKoAFtVyyfqgPyyb92OUKv4vK6QoznI3wDNr6bJVJaa+2II8w1bLpIiK6V34bZcTQ85ysbqDDAP9BzjB</PasswordCrypt>
+  <UseProxy>false</UseProxy>
+  <UseSystemProxy>false</UseSystemProxy>
+  <UseProxyAuth>false</UseProxyAuth>
+  <ProxyPasswordCrypt />
+  <ControlCenterUrl>https://flexportrpa.rpa.mulesoft.com/STMain/ControlCenter/ControlCenter.html</ControlCenterUrl>
+</CurrentUserSettings>

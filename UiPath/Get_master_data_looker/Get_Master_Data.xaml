@@ -1,0 +1,639 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Get_Master_Data" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="751.4285714285714,914.8571428571429" sap2010:WorkflowViewState.IdRef="Get_Master_Data_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="68">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="46">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Flowchart DisplayName="Get_Master_Data" sap:VirtualizedContainerService.HintSize="634.2857142857143,849.7142857142857" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <Flowchart.Variables>
+      <Variable x:TypeArguments="x:String" Name="inPut01" />
+      <Variable x:TypeArguments="x:String" Name="inPut02" />
+      <Variable x:TypeArguments="x:String" Name="input2" />
+    </Flowchart.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+        <av:Size x:Key="ShapeSize">60,74.85714285714286</av:Size>
+        <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,127.5</av:PointCollection>
+        <x:Double x:Key="Height">812.5</x:Double>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart.StartNode>
+      <x:Reference>__ReferenceID4</x:Reference>
+    </Flowchart.StartNode>
+    <FlowStep x:Name="__ReferenceID4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">200,127.5</av:Point>
+          <av:Size x:Key="ShapeSize">200,54.285714285714285</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">300,181.78571428571428 300,230.5</av:PointCollection>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="200,54.285714285714285" sap2010:WorkflowViewState.IdRef="OpenBrowser_8" Url="https://flexport.looker.com/looks/25521?toggle=fil">
+        <ui:OpenBrowser.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,104.57142857142857" sap2010:WorkflowViewState.IdRef="Sequence_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Sequence>
+          </ActivityAction>
+        </ui:OpenBrowser.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:OpenBrowser>
+      <FlowStep.Next>
+        <FlowStep x:Name="__ReferenceID0">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <av:Point x:Key="ShapeLocation">200,230.5</av:Point>
+              <av:Size x:Key="ShapeSize">200,54.285714285714285</av:Size>
+              <av:PointCollection x:Key="ConnectorLocation">300,284.7857142857143 300,328.5</av:PointCollection>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NCheckState DisplayName="GET INPUT01" sap:VirtualizedContainerService.HintSize="200,54.285714285714285" sap2010:WorkflowViewState.IdRef="NCheckState_10" Timeout="120" Version="V3">
+            <uix:NCheckState.IfExists>
+              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450.2857142857143,1809.7142857142858" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SVG'" sap:VirtualizedContainerService.HintSize="388.57142857142856,106.85714285714286" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a1d2651e-5b03-4287-9480-83319fb33bed" InformativeScreenshot="7eb8af4c719e660651309656f3f4b031" Selector="&lt;html app='chrome.exe' title='[RPA] FLEXBOT005_MKII_PRSFCL_INPUT01' /&gt;&lt;webctrl parentid='lk-react-container' parentname='explore-header-menu' tag='svg' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="388.57142857142856,106.85714285714286" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f23438f0-19e7-4da2-bf31-f3f8ddd70e4f" InformativeScreenshot="ce6ab06da3e2db004e42a9702283e6f2" Selector="&lt;html app='chrome.exe' title='[RPA] FLEXBOT005_MKII_PRSFCL_INPUT01' /&gt;&lt;webctrl parentid='download-menu-item' tag='SPAN' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  listbox-input-qr...'" sap:VirtualizedContainerService.HintSize="388.57142857142856,106.85714285714286" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="67c1b2ac-fdcd-4019-a933-c7bf1933adea" InformativeScreenshot="97f9ab19464058ac9951959c8f0b750d" Selector="&lt;html app='chrome.exe' title='[RPA] FLEXBOT005_MKII_PRSFCL_INPUT01' /&gt;&lt;webctrl id='listbox-input-qr-export-modal-format' tag='INPUT' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="388.57142857142856,106.85714285714286" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6e955fbc-3f3b-4b9b-a436-53adbdf253bb" InformativeScreenshot="6dfc818d466770ef542d4014eeec02bd" Selector="&lt;html app='chrome.exe' title='[RPA] FLEXBOT005_MKII_PRSFCL_INPUT01' /&gt;&lt;webctrl parentid='46164359' tag='SPAN' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'INPUT  qr-export-modal-...'" sap:VirtualizedContainerService.HintSize="388.57142857142856,159.42857142857142" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="a" KeyModifiers="Ctrl">
+                  <ui:SendHotkey.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5f80ab15-0157-46a4-8880-4fa4fe4618eb" InformativeScreenshot="5f20b25790aefa671bd7d21c685f6c75" Selector="&lt;html app='chrome.exe' title='[RPA] FLEXBOT005_MKII_PRSFCL_INPUT01' /&gt;&lt;webctrl id='qr-export-modal-custom-filename' tag='INPUT' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:SendHotkey.Target>
+                </ui:SendHotkey>
+                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'INPUT  qr-export-modal-...'" sap:VirtualizedContainerService.HintSize="388.57142857142856,159.42857142857142" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="del" KeyModifiers="None" SpecialKey="True">
+                  <ui:SendHotkey.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d26c69f6-0190-42eb-9efd-d87e7e2fb17d" InformativeScreenshot="f03d64b2fcfa866fac7facf33e1159c1" Selector="&lt;html app='chrome.exe' title='[RPA] FLEXBOT005_MKII_PRSFCL_INPUT01' /&gt;&lt;webctrl id='qr-export-modal-custom-filename' tag='INPUT' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:SendHotkey.Target>
+                </ui:SendHotkey>
+                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  qr-export-modal-...'" sap:VirtualizedContainerService.HintSize="388.57142857142856,134.85714285714286" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="RPA INVOICE INPUT01">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="88616e1d-6385-43f7-b5e1-05fdddea1e5f" InformativeScreenshot="978666873dbaf1dab3b5dde407f86a2f" Selector="&lt;html app='chrome.exe' title='[RPA] FLEXBOT005_MKII_PRSFCL_INPUT01' /&gt;&lt;webctrl id='qr-export-modal-custom-filename' tag='INPUT' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:TypeInto.Target>
+                </ui:TypeInto>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="388.57142857142856,106.85714285714286" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9267b1d8-1b35-42af-8236-176efd6fc075" InformativeScreenshot="a5c6a6aad0f3ca787befe9bd7b1cd4f1" Selector="&lt;html app='chrome.exe' title='[RPA] FLEXBOT005_MKII_PRSFCL_INPUT01' /&gt;&lt;webctrl aaname='All results' tag='SPAN' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON  qr-export-modal...'" sap:VirtualizedContainerService.HintSize="388.57142857142856,106.85714285714286" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0dc46460-2dc6-4010-bc5c-afe169d5118a" InformativeScreenshot="82922b22d54ab717398bf7cdadad4715" Selector="&lt;html app='chrome.exe' title='[RPA] FLEXBOT005_MKII_PRSFCL_INPUT01' /&gt;&lt;webctrl id='qr-export-modal-download' tag='BUTTON' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <Delay Duration="00:01:00" sap:VirtualizedContainerService.HintSize="388.57142857142856,93.14285714285714" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                <ui:CloseWindow TimeoutMS="{x:Null}" UseWindow="{x:Null}" DisplayName="Close Window 'chrome.exe [RPA]'" sap:VirtualizedContainerService.HintSize="388.57142857142856,106.85714285714286" sap2010:WorkflowViewState.IdRef="CloseWindow_1" InformativeScreenshot="39c08f8218864036f5b4d6ce25c5f709" Selector="&lt;html app='chrome.exe' title='[RPA] FLEXBOT005_MKII_PRSFCL_INPUT01' /&gt;" WaitForReady="INTERACTIVE" />
+              </Sequence>
+            </uix:NCheckState.IfExists>
+            <uix:NCheckState.IfNotExists>
+              <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450.2857142857143,106.85714285714286" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Sequence>
+            </uix:NCheckState.IfNotExists>
+            <uix:NCheckState.Target>
+              <uix:TargetAnchorable BrowserURL="https://flexport.looker.com/looks/25521?toggle=fil" DesignTimeRectangle="581, 1237, 131, 29" DesignTimeScaleFactor="2" ElementType="Text" FriendlyName="'Shipment ID'" FullSelectorArgument="&lt;webctrl parentid='Visualization_content' tag='STRONG' /&gt;" FuzzyAccuracy="0.66" FuzzySelectorArgument="&lt;webctrl parentid='Visualization_content' tag='STRONG' type='' class='' aaname='Shipment ID' check:innerText='Shipment ID' /&gt;" Guid="04463073-74cc-4605-809e-5790958a8e81" ImageBase64="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" InformativeScreenshot="0233a734594b087fd9825d61e129af01.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='[RPA] FLEXBOT005_MKII_PRSFCL_INPUT01' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                <uix:TargetAnchorable.Anchors>
+                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                    <uix:Target DesignTimeRectangle="769, 1189, 152, 126" FriendlyName="'Shipper Company Name'" FullSelectorArgument="&lt;webctrl class='column-label' idx='2' parentid='Visualization_content' tag='SPAN' /&gt;" FuzzyAccuracy="0.55" FuzzySelectorArgument="&lt;webctrl class='column-label' type='' parentid='Visualization_content' tag='SPAN' aaname='' check:innerText='Shipper Company Name' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector" />
+                  </scg:List>
+                </uix:TargetAnchorable.Anchors>
+              </uix:TargetAnchorable>
+            </uix:NCheckState.Target>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </uix:NCheckState>
+          <FlowStep.Next>
+            <FlowStep x:Name="__ReferenceID1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <av:Point x:Key="ShapeLocation">200,328.5</av:Point>
+                  <av:Size x:Key="ShapeSize">200,85.14285714285714</av:Size>
+                  <av:PointCollection x:Key="ConnectorLocation">300,413.6428571428571 300,461.5</av:PointCollection>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Sequence DisplayName="Get INPUT02" sap:VirtualizedContainerService.HintSize="200,85.14285714285714" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="484.57142857142856,402.2857142857143" sap2010:WorkflowViewState.IdRef="OpenBrowser_4" Url="https://flexport.looker.com/looks/25522?toggle=dat,det,vis&amp;qid=zMwQeTFs2Y398OKGEcJWCh">
+                  <ui:OpenBrowser.Body>
+                    <ActivityAction x:TypeArguments="x:Object">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450.2857142857143,297.7142857142857" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NCheckState DisplayName="GET INPUT02" sap:VirtualizedContainerService.HintSize="955.4285714285714,1751.4285714285713" sap2010:WorkflowViewState.IdRef="NCheckState_6" Timeout="120" Version="V3">
+                          <uix:NCheckState.IfExists>
+                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450.2857142857143,1529.7142857142858" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'PATH'" sap:VirtualizedContainerService.HintSize="388.57142857142856,106.85714285714286" sap2010:WorkflowViewState.IdRef="Click_19" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                <ui:Click.CursorPosition>
+                                  <ui:CursorPosition Position="Center">
+                                    <ui:CursorPosition.OffsetX>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetX>
+                                    <ui:CursorPosition.OffsetY>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetY>
+                                  </ui:CursorPosition>
+                                </ui:Click.CursorPosition>
+                                <ui:Click.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d0b457b4-e3e9-441f-8d08-bd9a06069216" InformativeScreenshot="914ea00534a5b54acb44d87a9c62e7b9" Selector="&lt;html app='chrome.exe' title='[RPA] FLEXBOT005_MKII_PRSFCL_INPUT02' /&gt;&lt;webctrl idx='2' parentid='lk-react-container' parentname='explore-header-menu' tag='path' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:Click.Target>
+                              </ui:Click>
+                              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="388.57142857142856,106.85714285714286" sap2010:WorkflowViewState.IdRef="Click_20" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                <ui:Click.CursorPosition>
+                                  <ui:CursorPosition Position="Center">
+                                    <ui:CursorPosition.OffsetX>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetX>
+                                    <ui:CursorPosition.OffsetY>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetY>
+                                  </ui:CursorPosition>
+                                </ui:Click.CursorPosition>
+                                <ui:Click.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="76b2f6d7-55e3-473e-bb53-930a1441f78e" InformativeScreenshot="2ff675c81c50efa51b699f7126656fa6" Selector="&lt;html app='chrome.exe' title='[RPA] FLEXBOT005_MKII_PRSFCL_INPUT02' /&gt;&lt;webctrl parentid='download-menu-item' tag='SPAN' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:Click.Target>
+                              </ui:Click>
+                              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  listbox-input-qr...'" sap:VirtualizedContainerService.HintSize="388.57142857142856,106.85714285714286" sap2010:WorkflowViewState.IdRef="Click_21" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                <ui:Click.CursorPosition>
+                                  <ui:CursorPosition Position="Center">
+                                    <ui:CursorPosition.OffsetX>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetX>
+                                    <ui:CursorPosition.OffsetY>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetY>
+                                  </ui:CursorPosition>
+                                </ui:Click.CursorPosition>
+                                <ui:Click.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ebafc589-85df-4643-b784-5e8281f28812" InformativeScreenshot="97f9ab19464058ac9951959c8f0b750d" Selector="&lt;html app='chrome.exe' title='[RPA] FLEXBOT005_MKII_PRSFCL_INPUT02' /&gt;&lt;webctrl id='listbox-input-qr-export-modal-format' tag='INPUT' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:Click.Target>
+                              </ui:Click>
+                              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="338.2857142857143,106.85714285714286" sap2010:WorkflowViewState.IdRef="Click_22" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                <ui:Click.CursorPosition>
+                                  <ui:CursorPosition Position="Center">
+                                    <ui:CursorPosition.OffsetX>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetX>
+                                    <ui:CursorPosition.OffsetY>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetY>
+                                  </ui:CursorPosition>
+                                </ui:Click.CursorPosition>
+                                <ui:Click.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c2c21e2d-7838-4ad7-811e-0dc030392617" InformativeScreenshot="26df6e4fc79e29d4eb8d8e15570f2137" Selector="&lt;html app='chrome.exe' title='[RPA] FLEXBOT005_MKII_PRSFCL_INPUT02' /&gt;&lt;webctrl parentid='46164359' tag='SPAN' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:Click.Target>
+                              </ui:Click>
+                              <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'INPUT  qr-export-modal-...'" sap:VirtualizedContainerService.HintSize="338.2857142857143,159.42857142857142" sap2010:WorkflowViewState.IdRef="SendHotkey_9" Key="a" KeyModifiers="Ctrl" SpecialKey="False">
+                                <ui:SendHotkey.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7ccc60c5-330c-4919-a2c8-d1373b3bd658" InformativeScreenshot="9da9ca831972efe96f5b53cc0b21b4e1" Selector="&lt;html app='chrome.exe' title='[RPA] FLEXBOT005_MKII_PRSFCL_INPUT02' /&gt;&lt;webctrl id='qr-export-modal-custom-filename' tag='INPUT' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:SendHotkey.Target>
+                              </ui:SendHotkey>
+                              <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'INPUT  qr-export-modal-...'" sap:VirtualizedContainerService.HintSize="338.2857142857143,159.42857142857142" sap2010:WorkflowViewState.IdRef="SendHotkey_10" Key="del" KeyModifiers="None" SpecialKey="True">
+                                <ui:SendHotkey.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bebd13f7-95c2-4d6d-b5b7-14186d41ad78" InformativeScreenshot="3d66a53c640bcf3de73e4a2ef4e46afb" Selector="&lt;html app='chrome.exe' title='[RPA] FLEXBOT005_MKII_PRSFCL_INPUT02' /&gt;&lt;webctrl id='qr-export-modal-custom-filename' tag='INPUT' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:SendHotkey.Target>
+                              </ui:SendHotkey>
+                              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  qr-export-modal-...'" sap:VirtualizedContainerService.HintSize="338.2857142857143,134.85714285714286" sap2010:WorkflowViewState.IdRef="TypeInto_5" Text="RPA INVOICE INPUT02">
+                                <ui:TypeInto.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="404a44e3-c9fd-4ab0-9886-f14189668648" InformativeScreenshot="eac4e478617bddb863e8e47f42872534" Selector="&lt;html app='chrome.exe' title='[RPA] FLEXBOT005_MKII_PRSFCL_INPUT02' /&gt;&lt;webctrl id='qr-export-modal-custom-filename' tag='INPUT' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:TypeInto.Target>
+                              </ui:TypeInto>
+                              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="338.2857142857143,106.85714285714286" sap2010:WorkflowViewState.IdRef="Click_23" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                <ui:Click.CursorPosition>
+                                  <ui:CursorPosition Position="Center">
+                                    <ui:CursorPosition.OffsetX>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetX>
+                                    <ui:CursorPosition.OffsetY>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetY>
+                                  </ui:CursorPosition>
+                                </ui:Click.CursorPosition>
+                                <ui:Click.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="92e46bd7-abfa-4dae-9bda-3f1141844d41" InformativeScreenshot="108fb9af7b3403f329c424064e25b65b" Selector="&lt;html app='chrome.exe' title='[RPA] FLEXBOT005_MKII_PRSFCL_INPUT02' /&gt;&lt;webctrl aaname='All results' tag='SPAN' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:Click.Target>
+                              </ui:Click>
+                              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON  qr-export-modal...'" sap:VirtualizedContainerService.HintSize="338.2857142857143,106.85714285714286" sap2010:WorkflowViewState.IdRef="Click_24" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                <ui:Click.CursorPosition>
+                                  <ui:CursorPosition Position="Center">
+                                    <ui:CursorPosition.OffsetX>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetX>
+                                    <ui:CursorPosition.OffsetY>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetY>
+                                  </ui:CursorPosition>
+                                </ui:Click.CursorPosition>
+                                <ui:Click.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d5e269a4-4668-48cc-a888-a80f5e419d3b" InformativeScreenshot="6fe750dff675647eae1585c09e6c5d5c" Selector="&lt;html app='chrome.exe' title='[RPA] FLEXBOT005_MKII_PRSFCL_INPUT02' /&gt;&lt;webctrl id='qr-export-modal-download' tag='BUTTON' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:Click.Target>
+                              </ui:Click>
+                            </Sequence>
+                          </uix:NCheckState.IfExists>
+                          <uix:NCheckState.IfNotExists>
+                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450.2857142857143,106.85714285714286" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
+                          </uix:NCheckState.IfNotExists>
+                          <uix:NCheckState.Target>
+                            <uix:TargetAnchorable BrowserURL="https://flexport.looker.com/looks/25522?toggle=dat,det,vis&amp;qid=zMwQeTFs2Y398OKGEcJWCh" DesignTimeRectangle="547, 654, 487, 32" DesignTimeScaleFactor="1.75" ElementType="Button" FriendlyName="'06.2 Shipment'" FullSelectorArgument="&lt;webctrl aaname=' 06.2 Shipment Shipper Shipper Company Name  The primary company*' parentid='explore-results-panel' tag='TABLE' /&gt;&lt;webctrl aria-role='button' tableRow='1' tag='DIV' /&gt;" FuzzyAccuracy="0.69" FuzzySelectorArgument="&lt;webctrl aaname=' 06.2 Shipment Shipper Shipper Company Name  The primary company*' parentid='explore-results-panel' tag='TABLE' /&gt;&lt;webctrl aria-role='button' type='' tag='DIV' class='sorting' aaname='' check:innerText='06.2 Shipment Shipper Shipper Company Name' /&gt;" Guid="68ee11c4-2796-43e2-a7d3-b2d7e8b2d859" ImageBase64="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" InformativeScreenshot="7bf0ccbfc0b9577835736231b532fa48.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='[RPA] FLEXBOT005_MKII_PRSFCL_INPUT02' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                  <uix:Target DesignTimeRectangle="547, 656, 192, 30" ElementType="Text" FriendlyName="'06.2 Shipment Shipper'" FullSelectorArgument="&lt;webctrl aaname=' 06.2 Shipment Shipper Shipper Company Name  The primary company*' parentid='explore-results-panel' tag='TABLE' /&gt;&lt;webctrl aaname='06.2 Shipment Shipper' tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' 06.2 Shipment Shipper Shipper Company Name  The primary company*' parentid='explore-results-panel' tag='TABLE' /&gt;&lt;webctrl aaname='06.2 Shipment Shipper' type='' tag='SPAN' class='view-name remove-if-truncate' check:innerText='06.2 Shipment Shipper' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMQAAAAiCAYAAAAAu3b0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAGdYAABnWARjRyu0AAAL1SURBVHhe7ZXBbdxQDERTTW45pf8OXEAKcB8OBIPJmDvzSUpaYb07hweIw0duJIPIj7c/7x/GmE98EMYAPghjAB+EMYAPwhjAB2EM4IMwBvBBGAP4IIwB6EH8/PX7BuYhExfBuXvNq5zR9Z6Z+F6IcnLO6HqPwM1BsBddvXz0VH8Fm5vs6s6zjBFex31W2Pt3M0Z4HfcRoAfBskne4ejOlZd7K/cV6L7/ysu9lfud+XIQq5dk+ZGPMv2tTPXb2KvcZ6f7/pWHve7O78boIHLvXh+ks5f9exToxjNm2c11ZPGM2dRVeabyMEcvMpZjj9FxAnTjGbPs5jqyeMZsrxtUHubZ2X0QWMczZnuZ7Oi64WVXZblW3tRVOWYqz1nUlacyRdcNL7sqy7Xyjrgqz1nU2ds4fBDZZ9mE6XzHVw7LWc1mWa9yO7nakfOup7IVHV85LGc1m2W9M9yut3HK/xAZlVesdlbELJuf5Kxms6xXuSrfs0N5LFduRcyx2UnOajbLeme6+Ky8ux2E6in2zDBiD+5Su1nOajbLepWrcrZDoeZWuXK7xDzuUDtZzmo2y3p7XIWaQx7iIKZ+Rd6n9rOc1WyW9SpX5d0diPJYrtwJeYfayXJWs1nWO8tFVt7oIHK9clUvM3GRagb76jdYzmo2y3qVq/LuDkR5LFdupnKwr3aynNVslvXOcpGV9+UgNpioFqzynCkmLqJ+m/WUy3JWs1nWq1yVd3bkbOV13czKyz3lspzVbJb1znBzprwNehDdBV2XZau8S3dv14ss18rrZNhTeWdPzpijcuUylJvzrhdZrpV3xFV5zpgT3BzERgysBpHKZzn6CvQVnblJzurI4hkz5bKeyle7ENbHbE/OCBdRTidndWTxjNleN8hedlkW0IMw/1l9PLOPyTe9+vv7IAqu/oO8ApNvevX390EUXP0HeQUm3/Tq7++DKLj6D/IKTL7p1d/fB2EM4IMwBvBBGAP4IIwBfBDGAD4IYwAfhDH/eP/4C9JE6Uysvz7MAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector" />
+                                  <uix:Target DesignTimeRectangle="619, 584, 140, 49" ElementType="Button" FriendlyName="'Results'" FullSelectorArgument="&lt;webctrl id='explore-results-panel-tab-button' tag='BUTTON' /&gt;" FuzzyAccuracy="0.68" FuzzySelectorArgument="&lt;webctrl id='explore-results-panel-tab-button' tag='BUTTON' type='' class='tab active' aaname='Results' check:innerText='Results' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJAAAAA1CAYAAACul2LlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAGdYAABnWARjRyu0AAAINSURBVHhe7ZbBagMxEEPzu/n23NtjSg8KwzCeeLUta4cneAdLslmoKLk9ETohBoRO6TWgr69vgGkkBgQWEgMCC4kBgYXEgMBCYkBgITEgsJAYEFhIDAgsJAYEFhIDAguJAYGFxIDAQmJAYCExILCQGBBYSMsO6H6/v6W6twI7fONZpK0H9Et192pG3zfyd0TafkC/VPevZPRtI39HpC0G5ORXMvq2kb8j0kcOKGaR3JvtjvxRlr14rqjuRZSvhPRxA4p+hdOtvC7LXjxXzHZWQtpuQNHP+Rm/6+ZzpMqyF88VM+9EfwWk7X9Ej+5Ef5RVnvx8rnqjrPI6v8uq7gpIWw/oaD/S3Ynv5t5MVnmdn7NI7q2CtO2AjvYzM/eqjrwuq7zOr/JM1b8SaavfQNGLfpW9I97t7uesu9d5nZ+JvUjVvQpp+x/Royz6MZ/14jv53HVHXufHvPK6O1chbTegLov+uywz6lZ3q97Ilzfyo5ez0Z0VkLYfUM5zVnG0W/kV1bvyune6LBLfuhppywHlPHdyFom9I90qz1Td+EbOcqfKRHxjBaRlB/QXzP4BYu9It8pn6N6IWZWvgvTRA4L/Q2JAYCExILCQGBBYSAwILCQGBBYSAwILiQGBhcSAwEJiQGAhMSCwkBgQWEgMCCwkBgQWEgMCC4kBgYV0ezweTwCX138ghBwxIHRCz+cPfc1yeRINwQIAAAAASUVORK5CYII=" SearchSteps="FuzzySelector" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NCheckState.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NCheckState>
+                        <Delay Duration="00:01:00" sap:VirtualizedContainerService.HintSize="388.57142857142856,93.14285714285714" sap2010:WorkflowViewState.IdRef="Delay_3" />
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:OpenBrowser.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:OpenBrowser>
+                <ui:CloseWindow TimeoutMS="{x:Null}" UseWindow="{x:Null}" DisplayName="Close Window 'chrome.exe [RPA]'" sap:VirtualizedContainerService.HintSize="484.57142857142856,106.85714285714286" sap2010:WorkflowViewState.IdRef="CloseWindow_2" InformativeScreenshot="2499c9f488e0506e07221269802417d9" Selector="&lt;html app='chrome.exe' title='[RPA] FLEXBOT005_MKII_PRSFCL_INPUT02' /&gt;" WaitForReady="INTERACTIVE" />
+              </Sequence>
+              <FlowStep.Next>
+                <FlowStep x:Name="__ReferenceID2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <av:Point x:Key="ShapeLocation">200,461.5</av:Point>
+                      <av:Size x:Key="ShapeSize">200,54.285714285714285</av:Size>
+                      <av:PointCollection x:Key="ConnectorLocation">300,515.7857142857143 300,564.5</av:PointCollection>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="C:\Users\RPA\Documents\UiPath\Flexbot_005_MKII_V2\Flexbot_005_MKII" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="200,54.285714285714285" sap2010:WorkflowViewState.IdRef="MoveFile_5" Overwrite="True" Path="C:\Users\RPA\Downloads\RPA INVOICE INPUT01.xlsx">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:MoveFile>
+                  <FlowStep.Next>
+                    <FlowStep x:Name="__ReferenceID3">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <av:Point x:Key="ShapeLocation">200,564.5</av:Point>
+                          <av:Size x:Key="ShapeSize">200,54.285714285714285</av:Size>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="C:\Users\RPA\Documents\UiPath\Flexbot_005_MKII_V2\Flexbot_005_MKII" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="200,54.285714285714285" sap2010:WorkflowViewState.IdRef="MoveFile_6" Overwrite="True" Path="C:\Users\RPA\Downloads\RPA INVOICE INPUT02.xlsx">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:MoveFile>
+                    </FlowStep>
+                  </FlowStep.Next>
+                </FlowStep>
+              </FlowStep.Next>
+            </FlowStep>
+          </FlowStep.Next>
+        </FlowStep>
+      </FlowStep.Next>
+    </FlowStep>
+    <x:Reference>__ReferenceID0</x:Reference>
+    <x:Reference>__ReferenceID1</x:Reference>
+    <x:Reference>__ReferenceID2</x:Reference>
+    <x:Reference>__ReferenceID3</x:Reference>
+  </Flowchart>
+</Activity>

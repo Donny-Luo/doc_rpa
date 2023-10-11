@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RpaSolution xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="OSRA-22 case">
+  <Id>e59feb65-a313-4fc3-849c-6ce8ccc9e0c6</Id>
+  <Author>nidhin.alexander@mulesoft.com</Author>
+  <LastEditor>RPA</LastEditor>
+  <LastModifyDate>2022-11-01T18:08:17.3010019+08:00</LastModifyDate>
+  <IsLocked>false</IsLocked>
+  <Description />
+  <LastBusinessProcessEdit>2022-09-27T06:41:39.258043Z</LastBusinessProcessEdit>
+  <ActivityParameters>
+    <ActivityParameterVariableBase xsi:type="BoolActivityParameter">
+      <Name>bDownldSuccessful</Name>
+      <ID>00000000-0000-0000-0000-000000000000</ID>
+      <Value xsi:type="xsd:string">{"Magic":"$__ServiceTraceVariable__$","Content":{"Type":2,"BoolValue":false},"Name":"bDownldSuccessful","Id":"00000000-0000-0000-0000-000000000000","Access":"RW","Tags":null}</Value>
+      <ActivityParameterScope>1</ActivityParameterScope>
+    </ActivityParameterVariableBase>
+    <ActivityParameterVariableBase xsi:type="WebSessionIdActivityParameter">
+      <Name>dfltWebSession</Name>
+      <ID>00000000-0000-0000-0000-000000000000</ID>
+      <Value xsi:type="xsd:string">{"Magic":"$__ServiceTraceVariable__$","Content":{"Type":12,"Id":"00000000-0000-0000-0000-000000000000"},"Name":"dfltWebSession","Id":"00000000-0000-0000-0000-000000000000","Access":"RW","Tags":null}</Value>
+      <ActivityParameterScope>1</ActivityParameterScope>
+      <ValueInUserInputFormat>00000000-0000-0000-0000-000000000000</ValueInUserInputFormat>
+    </ActivityParameterVariableBase>
+    <ActivityParameterVariableBase xsi:type="UserAccountActivityParameter">
+      <Name>invoicelyCreds</Name>
+      <ID>00000000-0000-0000-0000-000000000000</ID>
+      <Value xsi:type="xsd:string">{"Magic":"$__ServiceTraceVariable__$","Content":{"Type":8,"UserName":"rpabottest123@gmail.com","Token":"","Password":"","CryptUser":"rpabottest123@gmail.com","CryptPassword":""},"Name":"invoicelyCreds","Id":"00000000-0000-0000-0000-000000000000","Access":"RW","Tags":null}</Value>
+      <ActivityParameterScope>1</ActivityParameterScope>
+    </ActivityParameterVariableBase>
+    <ActivityParameterVariableBase xsi:type="IntegerActivityParameter">
+      <Name>nRowCounter</Name>
+      <ID>00000000-0000-0000-0000-000000000000</ID>
+      <Value xsi:type="xsd:string">{"Magic":"$__ServiceTraceVariable__$","Content":{"Type":0,"IntValue":0},"Name":"nRowCounter","Id":"00000000-0000-0000-0000-000000000000","Access":"RW","Tags":null}</Value>
+      <ActivityParameterScope>1</ActivityParameterScope>
+    </ActivityParameterVariableBase>
+    <ActivityParameterVariableBase xsi:type="AlphanumericActivityParameter">
+      <Name>nColumnCounter</Name>
+      <ID>00000000-0000-0000-0000-000000000000</ID>
+      <Value xsi:type="xsd:string">{"Magic":"$__ServiceTraceVariable__$","Content":{"Type":1,"StringValue":"9"},"Name":"nColumnCounter","Id":"00000000-0000-0000-0000-000000000000","Access":"RW","Tags":null}</Value>
+      <ActivityParameterScope>1</ActivityParameterScope>
+    </ActivityParameterVariableBase>
+    <ActivityParameterVariableBase xsi:type="AlphanumericActivityParameter">
+      <Name>folderPath</Name>
+      <ID>00000000-0000-0000-0000-000000000000</ID>
+      <Value xsi:type="xsd:string">{"Magic":"$__ServiceTraceVariable__$","Content":{"Type":1,"StringValue":"C:\\RPADemo\\OSRA22"},"Name":"folderPath","Id":"00000000-0000-0000-0000-000000000000","Access":"RW","Tags":null}</Value>
+      <ActivityParameterScope>1</ActivityParameterScope>
+    </ActivityParameterVariableBase>
+    <ActivityParameterVariableBase xsi:type="IntegerActivityParameter">
+      <Name>nUniqueCounter</Name>
+      <ID>00000000-0000-0000-0000-000000000000</ID>
+      <Value xsi:type="xsd:string">{"Magic":"$__ServiceTraceVariable__$","Content":{"Type":0,"IntValue":0},"Name":"nUniqueCounter","Id":"00000000-0000-0000-0000-000000000000","Access":"RW","Tags":null}</Value>
+      <ActivityParameterScope>1</ActivityParameterScope>
+    </ActivityParameterVariableBase>
+    <ActivityParameterVariableBase xsi:type="IntegerActivityParameter">
+      <Name>tempValue</Name>
+      <ID>00000000-0000-0000-0000-000000000000</ID>
+      <Value xsi:type="xsd:string">{"Magic":"$__ServiceTraceVariable__$","Content":{"Type":0,"IntValue":0},"Name":"tempValue","Id":"00000000-0000-0000-0000-000000000000","Access":"RW","Tags":null}</Value>
+      <ActivityParameterScope>1</ActivityParameterScope>
+    </ActivityParameterVariableBase>
+    <ActivityParameterVariableBase xsi:type="AlphanumericActivityParameter">
+      <Name>fullPath</Name>
+      <ID>00000000-0000-0000-0000-000000000000</ID>
+      <Value xsi:type="xsd:string">{"Magic":"$__ServiceTraceVariable__$","Content":{"Type":1,"StringValue":""},"Name":"fullPath","Id":"00000000-0000-0000-0000-000000000000","Access":"RW","Tags":null}</Value>
+      <ActivityParameterScope>1</ActivityParameterScope>
+    </ActivityParameterVariableBase>
+  </ActivityParameters>
+  <DesignStudioVersion>6.0.15086.1</DesignStudioVersion>
+  <BusinessProcessVersion>0</BusinessProcessVersion>
+  <ScreenResolution>
+    <Width>1463</Width>
+    <Height>823</Height>
+  </ScreenResolution>
+  <InternalCacheNote>11/1/2022 6:07:39 PM  Solution was imported from file 'C:\Users\RPA\Desktop\OSRA-22 case Demo\OSRA-22.crpa' using application version: 6.0.15086.1</InternalCacheNote>
+</RpaSolution>

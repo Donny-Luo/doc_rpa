@@ -1,0 +1,1292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dictionary>
+  <item>
+    <key>
+      <string>LastUsedFolders</string>
+    </key>
+    <value type="WorkflowEditor.Core.BaseTypes.Collections.SerializableDictionary`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], WorkflowEditor.Core, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+      <dictionary>
+        <item>
+          <key>
+            <string>ForOpeningAndSavingProjects</string>
+          </key>
+          <value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+            <string>C:\Users\RPA\Documents\Mulesoft\Cache\e59feb65-a313-4fc3-849c-6ce8ccc9e0c6</string>
+          </value>
+        </item>
+        <item>
+          <key>
+            <string>ForLoadingAnalysisPackage</string>
+          </key>
+          <value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+            <string />
+          </value>
+        </item>
+      </dictionary>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>RpaRepositoryExplorerPresenter</string>
+    </key>
+    <value type="WorkflowEditor.Core.BaseTypes.Collections.SerializableDictionary`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], WorkflowEditor.Core, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+      <dictionary>
+        <item>
+          <key>
+            <string>ProcessNameColumnWidth</string>
+          </key>
+          <value type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+            <int>240</int>
+          </value>
+        </item>
+        <item>
+          <key>
+            <string>OwnerColumnWidth</string>
+          </key>
+          <value type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+            <int>100</int>
+          </value>
+        </item>
+        <item>
+          <key>
+            <string>LastChangedColumnWidth</string>
+          </key>
+          <value type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+            <int>100</int>
+          </value>
+        </item>
+        <item>
+          <key>
+            <string>LockColumnWidth</string>
+          </key>
+          <value type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+            <int>50</int>
+          </value>
+        </item>
+      </dictionary>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>ActivityLibraryExplorerPresenter</string>
+    </key>
+    <value type="WorkflowEditor.Core.BaseTypes.Collections.SerializableDictionary`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], WorkflowEditor.Core, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+      <dictionary>
+        <item>
+          <key>
+            <string>NameColumnWidth</string>
+          </key>
+          <value type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+            <int>200</int>
+          </value>
+        </item>
+        <item>
+          <key>
+            <string>DescriptionColumnWidth</string>
+          </key>
+          <value type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+            <int>220</int>
+          </value>
+        </item>
+        <item>
+          <key>
+            <string>LastChangedColumnWidth</string>
+          </key>
+          <value type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+            <int>200</int>
+          </value>
+        </item>
+        <item>
+          <key>
+            <string>LastChangedByColumnWidth</string>
+          </key>
+          <value type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+            <int>200</int>
+          </value>
+        </item>
+        <item>
+          <key>
+            <string>ActivityTagsColumnWidth</string>
+          </key>
+          <value type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+            <int>200</int>
+          </value>
+        </item>
+      </dictionary>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>ToolBoxItemProvider</string>
+    </key>
+    <value type="WorkflowEditor.Core.BaseTypes.Collections.SerializableDictionary`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], WorkflowEditor.Core, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+      <dictionary>
+        <item>
+          <key>
+            <string>Items</string>
+          </key>
+          <value type="WorkflowEditor.Core.BaseTypes.Collections.SerializableObservableCollection`1[[WorkflowEditor.Common.App.ToolBox.ToolBoxItemBase, WorkflowEditor.Common.App, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null]], WorkflowEditor.Core, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+            <collection>
+              <item>
+                <value>
+                  <ToolBoxItemBase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ToolBoxItemCategory">
+                    <Name>Variable Handling</Name>
+                    <Order>14</Order>
+                    <Children>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Activity Parameters</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Check Value</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Combine Strings</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Check Regex</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Convert String</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Coordinates</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Generate and Modify Date and Time</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Get Array Count</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Json Query</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Math Operations</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Read Clipboard</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Read from Array</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Runtime Variables</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Set Array Variable</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Set Variable</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>String Operations</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>String to Array</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>User Account Decrypter</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Variable</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Workflow Based Variables</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Write Clipboard</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                    </Children>
+                    <IsExpanded>true</IsExpanded>
+                  </ToolBoxItemBase>
+                </value>
+              </item>
+              <item>
+                <value>
+                  <ToolBoxItemBase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ToolBoxItemCategory">
+                    <Name>Document Processing</Name>
+                    <Order>4</Order>
+                    <Children>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Entities with AWS</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>ERP Docs with AWS</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Key values with AWS</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>OCR with AWS</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Tables with AWS</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Translate with AWS</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Credentials For AWS</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                    </Children>
+                    <IsExpanded>true</IsExpanded>
+                  </ToolBoxItemBase>
+                </value>
+              </item>
+              <item>
+                <value>
+                  <ToolBoxItemBase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ToolBoxItemCategory">
+                    <Name>Measurement Points</Name>
+                    <Order>10</Order>
+                    <Children>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Checkpoint</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>General Timer Start</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>General Timer Stop</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Stopwatch</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                    </Children>
+                    <IsExpanded>true</IsExpanded>
+                  </ToolBoxItemBase>
+                </value>
+              </item>
+              <item>
+                <value>
+                  <ToolBoxItemBase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ToolBoxItemCategory">
+                    <Name>Checks</Name>
+                    <Order>2</Order>
+                    <Children>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Check Process</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Image Search</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Screenshot</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Search Pattern</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Window Wait</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                    </Children>
+                    <IsExpanded>true</IsExpanded>
+                  </ToolBoxItemBase>
+                </value>
+              </item>
+              <item>
+                <value>
+                  <ToolBoxItemBase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ToolBoxItemCategory">
+                    <Name>Control</Name>
+                    <Order>3</Order>
+                    <Children>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Clear Screen</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Enter String</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Keystrokes</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Mouse Actions</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Run Program</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Sleep</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Window set State</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                    </Children>
+                    <IsExpanded>true</IsExpanded>
+                  </ToolBoxItemBase>
+                </value>
+              </item>
+              <item>
+                <value>
+                  <ToolBoxItemBase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ToolBoxItemCategory">
+                    <Name>File Operations</Name>
+                    <Order>6</Order>
+                    <Children>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Copy File</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Create File</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Delete File</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Extract Images from PDF File</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>File Check</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Get File Info</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Move File</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Read PDF File</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Read from Text File</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Rename File</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Write to Text File</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Iterate over Files</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                    </Children>
+                    <IsExpanded>true</IsExpanded>
+                  </ToolBoxItemBase>
+                </value>
+              </item>
+              <item>
+                <value>
+                  <ToolBoxItemBase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ToolBoxItemCategory">
+                    <Name>General</Name>
+                    <Order>8</Order>
+                    <Children>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Exit Workflow</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Pattern Gallery</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>STC Protector</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                    </Children>
+                    <IsExpanded>true</IsExpanded>
+                  </ToolBoxItemBase>
+                </value>
+              </item>
+              <item>
+                <value>
+                  <ToolBoxItemBase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ToolBoxItemCategory">
+                    <Name>Flow Control</Name>
+                    <Order>7</Order>
+                    <Children>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Force Error State</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Force OK State</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Pattern Select</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Select Case</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>File controlled Loop</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Break Loop</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Loop</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Managed</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Lock Section</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Group</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Transaction</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                    </Children>
+                    <IsExpanded>true</IsExpanded>
+                  </ToolBoxItemBase>
+                </value>
+              </item>
+              <item>
+                <value>
+                  <ToolBoxItemBase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ToolBoxItemCategory">
+                    <Name>App Automation</Name>
+                    <Order>1</Order>
+                    <Children>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Click App Element</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Keystrokes to App Element</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Read Text from App Element</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>App Session</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Set Text to App Element</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Set Toggle App Element</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                    </Children>
+                    <IsExpanded>true</IsExpanded>
+                  </ToolBoxItemBase>
+                </value>
+              </item>
+              <item>
+                <value>
+                  <ToolBoxItemBase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ToolBoxItemCategory">
+                    <Name>Mail Operations</Name>
+                    <Order>9</Order>
+                    <Children>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Mail Session</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Read Mail</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Send Mail</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Set Mail</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                    </Children>
+                    <IsExpanded>true</IsExpanded>
+                  </ToolBoxItemBase>
+                </value>
+              </item>
+              <item>
+                <value>
+                  <ToolBoxItemBase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ToolBoxItemCategory">
+                    <Name>System</Name>
+                    <Order>12</Order>
+                    <Children>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Map Network Drive</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Message Box</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>System Validation</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Write Log</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                    </Children>
+                    <IsExpanded>true</IsExpanded>
+                  </ToolBoxItemBase>
+                </value>
+              </item>
+              <item>
+                <value>
+                  <ToolBoxItemBase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ToolBoxItemCategory">
+                    <Name>Network</Name>
+                    <Order>11</Order>
+                    <Children>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Service Check</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Ping</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>REST Call</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                    </Children>
+                    <IsExpanded>true</IsExpanded>
+                  </ToolBoxItemBase>
+                </value>
+              </item>
+              <item>
+                <value>
+                  <ToolBoxItemBase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ToolBoxItemCategory">
+                    <Name>Excel Operations</Name>
+                    <Order>5</Order>
+                    <Children>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Read from Excel File</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Recalculate Excel File</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Write to Excel File</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Excel Session</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Excel Controlled Loop</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                    </Children>
+                    <IsExpanded>true</IsExpanded>
+                  </ToolBoxItemBase>
+                </value>
+              </item>
+              <item>
+                <value>
+                  <ToolBoxItemBase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ToolBoxItemCategory">
+                    <Name>Text Recognition (OCR)</Name>
+                    <Order>13</Order>
+                    <Children>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Intelligent OCR (2020)</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>AI OCR (screen-based)</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>AI OCR (file-based)</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                    </Children>
+                    <IsExpanded>true</IsExpanded>
+                  </ToolBoxItemBase>
+                </value>
+              </item>
+              <item>
+                <value>
+                  <ToolBoxItemBase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ToolBoxItemCategory">
+                    <Name>Web Automation</Name>
+                    <Order>15</Order>
+                    <Children>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Check Web Element</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Clear Web Element</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Click Web Element</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Close Web Session</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Get Web Element Text</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Keystrokes to Web Element</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Confirm Alert Box</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Navigate</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Select Web Element</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Web Session (Chrome)</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Web Session (MS Edge)</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Web Session (Firefox)</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Submit Form</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                      <item>
+                        <value>
+                          <ToolBoxItemBase xsi:type="ToolBoxItem">
+                            <Name>Website Load Time</Name>
+                            <Order>0</Order>
+                            <IsFavorite>false</IsFavorite>
+                          </ToolBoxItemBase>
+                        </value>
+                      </item>
+                    </Children>
+                    <IsExpanded>true</IsExpanded>
+                  </ToolBoxItemBase>
+                </value>
+              </item>
+              <item>
+                <value>
+                  <ToolBoxItemBase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ToolBoxItemCategory">
+                    <Name>User Templates</Name>
+                    <Order>110</Order>
+                    <Children />
+                    <IsExpanded>true</IsExpanded>
+                  </ToolBoxItemBase>
+                </value>
+              </item>
+            </collection>
+          </value>
+        </item>
+      </dictionary>
+    </value>
+  </item>
+</dictionary>

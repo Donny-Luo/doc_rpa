@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WorkflowEditorProject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Login to shipment page and upload corresponding PDF" ModelRevision="9" xml:space="preserve" WorkflowTypeId="3" Version="6.0.15086.1">
+  <NameToDisplay>Login to shipment page and upload corresponding PDF ()</NameToDisplay>
+  <ID>5bc3f8b2-41e1-487e-9485-bcfeb117f58e</ID>
+  <Children type="WorkflowEditor.Activity.InitializeSection.Model.InitializeSectionActivity, WorkflowEditor.Activity.InitializeSection, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+    <InitializeSectionActivity Name="Workflow Initialization" ModelRevision="9">
+      <NameToDisplay>Workflow Initialization</NameToDisplay>
+      <ID>1b3b4d63-f390-4f8b-af06-36e16a7f3ad6</ID>
+      <Children type="WorkflowEditor.Activity.ActivityParameters.Model.ActivityParametersActivity, WorkflowEditor.Activity.ActivityParameters, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+        <ActivityParametersActivity Name="Activity Parameters" ModelRevision="9">
+          <NameToDisplay>Activity Parameters</NameToDisplay>
+          <ID>27c84fe3-3599-44b3-ad3e-db0d3ba1d081</ID>
+          <IsEnabled>true</IsEnabled>
+          <IsVirgin>true</IsVirgin>
+          <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+          <VariableMappings />
+          <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+          <ActivityParameterReferences />
+          <LogVariables>false</LogVariables>
+        </ActivityParametersActivity>
+      </Children>
+      <Children type="WorkflowEditor.Activity.SearchPatternGallery.Model.SearchPatternGalleryActivity, WorkflowEditor.Activity.SearchPatternGallery, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+        <SearchPatternGalleryActivity Name="Pattern Gallery" ModelRevision="9">
+          <NameToDisplay>Pattern Gallery</NameToDisplay>
+          <ID>45df6521-baa4-4094-b8a5-52877778128f</ID>
+          <IsEnabled>true</IsEnabled>
+          <IsVirgin>true</IsVirgin>
+          <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+          <VariableMappings />
+          <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+          <SearchPatternGroups>
+            <SearchPatternGroupViewModel>
+              <ID>977cfecd-c4f1-43bd-8b74-f99844ad43ca</ID>
+              <Name>Ungrouped patterns</Name>
+              <Description>This is the default pattern group for all patterns.</Description>
+              <SearchPatterns />
+              <IsDefaultGroup>true</IsDefaultGroup>
+            </SearchPatternGroupViewModel>
+          </SearchPatternGroups>
+        </SearchPatternGalleryActivity>
+      </Children>
+      <Children type="WorkflowEditor.Activity.WorkflowSettings.Model.WorkflowSettingsActivity, WorkflowEditor.Activity.WorkflowSettings, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+        <WorkflowSettingsActivity Name="Settings" ModelRevision="9">
+          <NameToDisplay>Settings</NameToDisplay>
+          <ID>6359b459-f79e-424a-92e1-4bc205d3655c</ID>
+          <IsEnabled>true</IsEnabled>
+          <IsVirgin>false</IsVirgin>
+          <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+          <VariableMappings />
+          <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+          <AllowedPaths />
+          <EnvironmentVariables />
+          <BasePath>%temp%</BasePath>
+          <RemoveBasePathSubfolderOnExit>true</RemoveBasePathSubfolderOnExit>
+          <GenerateSubFolder>true</GenerateSubFolder>
+          <UseAllowedPathsLimitation>false</UseAllowedPathsLimitation>
+          <ProxySetting>NoProxy</ProxySetting>
+          <IsUseProxyAuthChecked>false</IsUseProxyAuthChecked>
+          <ProxyUrl />
+          <ProxyAccount>
+            <Name>Name</Name>
+            <ID>5ace4248-9d3b-4771-92c8-edc591d025da</ID>
+            <Value xsi:type="xsd:string">{"Magic":"$__ServiceTraceVariable__$","Content":{"Type":8,"UserName":"","Token":"","Password":"","CryptUser":"","CryptPassword":""},"Name":"Name","Id":"5ace4248-9d3b-4771-92c8-edc591d025da","Access":"RW","Tags":null}</Value>
+          </ProxyAccount>
+        </WorkflowSettingsActivity>
+      </Children>
+      <IsEnabled>true</IsEnabled>
+      <IsVirgin>true</IsVirgin>
+      <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+      <VariableMappings />
+      <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+    </InitializeSectionActivity>
+  </Children>
+  <Children type="WorkflowEditor.Workflow.Structure.ProjectItems.Measurement.ActivityWorkflowMeasurement, WorkflowEditor.Workflow.Structure, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+    <ActivityWorkflowMeasurement Name="Activity Workflow" ModelRevision="9">
+      <NameToDisplay>Activity Workflow</NameToDisplay>
+      <ID>462ff3fe-d79f-4dcf-9a0e-3a33bb66558e</ID>
+      <Children type="WorkflowEditor.Workflow.Structure.ProjectItems.Transaction, WorkflowEditor.Workflow.Structure, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+        <Transaction Name="Transaction" ModelRevision="9">
+          <NameToDisplay>Transaction</NameToDisplay>
+          <ID>1d4d4346-77e9-474f-9edd-9590c80d8894</ID>
+          <Children type="WorkflowEditor.ControlBlocks.ReadFile.Model.ReadFileActivity, WorkflowEditor.ControlBlocks, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+            <ReadFileActivity Name="File controlled Loop" ModelRevision="9">
+              <NameToDisplay>File controlled Loop</NameToDisplay>
+              <ID>b36d91e3-b436-41bd-8bce-6221de84c58a</ID>
+              <Children type="WorkflowEditor.Activity.WASession.Model.WASessionChromeActivity, WorkflowEditor.Activity.WASession, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+                <WASessionChromeActivity Name="Web Session (Chrome)" ModelRevision="9">
+                  <NameToDisplay>Web Session (Chrome)</NameToDisplay>
+                  <ID>c1c5f4c4-6c22-493c-a8bc-42db18f92ea0</ID>
+                  <Children type="WorkflowEditor.Activity.MessageBox.Model.MessageBoxActivity, WorkflowEditor.Activity.MessageBox, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+                    <MessageBoxActivity Name="Message Box" ModelRevision="9">
+                      <NameToDisplay>Message Box</NameToDisplay>
+                      <ID>0a98c718-33a8-459b-9fcc-1449e4ad5409</ID>
+                      <IsEnabled>true</IsEnabled>
+                      <IsVirgin>false</IsVirgin>
+                      <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+                      <VariableMappings />
+                      <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+                      <Button>OK</Button>
+                      <Icon>No</Icon>
+                      <DefaultButton>First</DefaultButton>
+                      <Title>URL to Navigate</Title>
+                      <Text>https://core.flexport.com/shipments/{$File_controlled_Loop_UniqueRow}/documents)</Text>
+                      <Timeout>10</Timeout>
+                      <UseTimeout>true</UseTimeout>
+                      <Modality>System</Modality>
+                    </MessageBoxActivity>
+                  </Children>
+                  <IsEnabled>true</IsEnabled>
+                  <IsVirgin>false</IsVirgin>
+                  <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+                  <VariableMappings />
+                  <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+                  <WebSessionId />
+                  <OpenBrowserWizard>true</OpenBrowserWizard>
+                  <StartUpURL>https://core.flexport.com/shipments/{$File_controlled_Loop_UniqueRow}/documents)</StartUpURL>
+                  <StartMaximized>true</StartMaximized>
+                  <BrowserMismatch>Warning</BrowserMismatch>
+                  <KeepOutMouse>true</KeepOutMouse>
+                  <RepeatMouseKeepOut>false</RepeatMouseKeepOut>
+                  <HideCommandPrompt>true</HideCommandPrompt>
+                  <MouseParkingPosition>TopRight</MouseParkingPosition>
+                  <ScriptTimeout>5</ScriptTimeout>
+                  <WebDriverTimeoutInSeconds>60</WebDriverTimeoutInSeconds>
+                  <WebdriverStartRetries>0</WebdriverStartRetries>
+                  <ExtraArguments>--no-sandbox;--disable-translate;--disable-infobars</ExtraArguments>
+                  <UserAgentString />
+                  <EnableVerboseLogging>false</EnableVerboseLogging>
+                  <DisableSupportForUnpackedExtensions>false</DisableSupportForUnpackedExtensions>
+                </WASessionChromeActivity>
+              </Children>
+              <IsEnabled>true</IsEnabled>
+              <IsVirgin>false</IsVirgin>
+              <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+              <VariableMappings />
+              <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+              <UseTypeTextOnly>false</UseTypeTextOnly>
+              <RandomFileRead>false</RandomFileRead>
+              <HasHeaderLine>true</HasHeaderLine>
+              <FileAndPath>C:\RPADemo\uniquefile.csv</FileAndPath>
+              <IsIn3rdParty>false</IsIn3rdParty>
+              <LimitIterations>false</LimitIterations>
+              <IterationCount>1</IterationCount>
+              <UseSeperateExecutionPath>false</UseSeperateExecutionPath>
+              <SeperateExecutionPath />
+              <IsDynamic>false</IsDynamic>
+              <Columns>
+                <ColumnInfo>
+                  <AvailableVariableTypes>
+                    <VariableType>INT</VariableType>
+                    <VariableType>STRING</VariableType>
+                  </AvailableVariableTypes>
+                  <ColumnName>UniqueRow</ColumnName>
+                  <ColumnType>INT</ColumnType>
+                  <SelectedType>INT</SelectedType>
+                  <TextType>STRING</TextType>
+                  <FilterString />
+                  <FilterUseRegex>false</FilterUseRegex>
+                </ColumnInfo>
+              </Columns>
+              <FullStaticDataGrid>
+                <GridData>
+                  <ArrayOfString>
+                    <string>7873489</string>
+                  </ArrayOfString>
+                  <ArrayOfString>
+                    <string>7873490</string>
+                  </ArrayOfString>
+                  <ArrayOfString>
+                    <string>7873492</string>
+                  </ArrayOfString>
+                  <ArrayOfString>
+                    <string>7873496</string>
+                  </ArrayOfString>
+                  <ArrayOfString>
+                    <string>7873499</string>
+                  </ArrayOfString>
+                  <ArrayOfString>
+                    <string>7873501</string>
+                  </ArrayOfString>
+                </GridData>
+              </FullStaticDataGrid>
+              <FilteredStaticDataGrid>
+                <GridData>
+                  <ArrayOfString>
+                    <string>7873489</string>
+                  </ArrayOfString>
+                  <ArrayOfString>
+                    <string>7873490</string>
+                  </ArrayOfString>
+                  <ArrayOfString>
+                    <string>7873492</string>
+                  </ArrayOfString>
+                  <ArrayOfString>
+                    <string>7873496</string>
+                  </ArrayOfString>
+                  <ArrayOfString>
+                    <string>7873499</string>
+                  </ArrayOfString>
+                  <ArrayOfString>
+                    <string>7873501</string>
+                  </ArrayOfString>
+                </GridData>
+              </FilteredStaticDataGrid>
+            </ReadFileActivity>
+          </Children>
+          <IsEnabled>true</IsEnabled>
+          <IsVirgin>true</IsVirgin>
+          <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+          <VariableMappings />
+        </Transaction>
+      </Children>
+      <IsEnabled>true</IsEnabled>
+      <IsVirgin>true</IsVirgin>
+      <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+      <VariableMappings />
+      <RecordTimerSum>false</RecordTimerSum>
+      <Application>&lt;not defined&gt;</Application>
+      <BP>&lt;not defined&gt;</BP>
+      <Client>000</Client>
+      <Customer>&lt;not defined&gt;</Customer>
+      <Server>Server</Server>
+      <System>&lt;not defined&gt;</System>
+      <ErrorCycles>1</ErrorCycles>
+      <ReduceErrorCycleAtDesignTime>true</ReduceErrorCycleAtDesignTime>
+      <DelayBetweenRetries>60</DelayBetweenRetries>
+      <Timeout>45</Timeout>
+      <TestCustomer>n/a for RPA Workflows!</TestCustomer>
+      <TestSystem>n/a for RPA Workflows!</TestSystem>
+      <TestClient>n/a for RPA Workflows!</TestClient>
+      <TestApplication>n/a for RPA Workflows!</TestApplication>
+      <TestLocation>n/a for RPA Workflows!</TestLocation>
+      <TestStation>n/a for RPA Workflows!</TestStation>
+      <AvailableVariableSources />
+    </ActivityWorkflowMeasurement>
+  </Children>
+  <Children type="WorkflowEditor.ControlBlocks.WorkflowFinalization.Model.WorkflowFinalizationActivity, WorkflowEditor.ControlBlocks, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+    <WorkflowFinalizationActivity Name="Workflow Finalization" ModelRevision="9">
+      <NameToDisplay>Workflow Finalization</NameToDisplay>
+      <ID>ffdb4782-3ef4-4177-a801-e1c160f3d7d3</ID>
+      <Children type="WorkflowEditor.ControlBlocks.WorkflowFinalization.Model.OnSuccessSection, WorkflowEditor.ControlBlocks, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+        <OnSuccessSection Name="Workflow run succeeded" ModelRevision="9">
+          <NameToDisplay>Workflow run succeeded</NameToDisplay>
+          <ID>8be6fba8-4463-4e5b-bbda-a702d08e352c</ID>
+          <Children type="WorkflowEditor.Workflow.Structure.ProjectItems.DummyItem, WorkflowEditor.Workflow.Structure, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+            <DummyItem Name="Insert Item here..." ModelRevision="9">
+              <NameToDisplay>Insert Item here...</NameToDisplay>
+              <ID>d2014265-705e-4530-94c8-606fb74119cf</ID>
+              <IsEnabled>true</IsEnabled>
+              <IsVirgin>true</IsVirgin>
+              <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+              <VariableMappings />
+              <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+            </DummyItem>
+          </Children>
+          <IsEnabled>true</IsEnabled>
+          <IsVirgin>true</IsVirgin>
+          <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+          <VariableMappings />
+        </OnSuccessSection>
+      </Children>
+      <Children type="WorkflowEditor.ControlBlocks.WorkflowFinalization.Model.OnErrorSection, WorkflowEditor.ControlBlocks, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+        <OnErrorSection Name="Workflow run failed" ModelRevision="9">
+          <NameToDisplay>Workflow run failed</NameToDisplay>
+          <ID>c44a831d-7cc6-4a55-9998-2789273c7397</ID>
+          <Children type="WorkflowEditor.Workflow.Structure.ProjectItems.DummyItem, WorkflowEditor.Workflow.Structure, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+            <DummyItem Name="Insert Item here..." ModelRevision="9">
+              <NameToDisplay>Insert Item here...</NameToDisplay>
+              <ID>a82067e7-47c0-4935-82a8-f17a0c2e6989</ID>
+              <IsEnabled>true</IsEnabled>
+              <IsVirgin>true</IsVirgin>
+              <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+              <VariableMappings />
+              <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+            </DummyItem>
+          </Children>
+          <IsEnabled>true</IsEnabled>
+          <IsVirgin>true</IsVirgin>
+          <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+          <VariableMappings />
+        </OnErrorSection>
+      </Children>
+      <Children type="WorkflowEditor.ControlBlocks.WorkflowFinalization.Model.DoAlwaysSection, WorkflowEditor.ControlBlocks, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+        <DoAlwaysSection Name="Common finalization handling" ModelRevision="9">
+          <NameToDisplay>Common finalization handling</NameToDisplay>
+          <ID>3b30a9d9-f14d-431d-915f-49dd1709978c</ID>
+          <Children type="WorkflowEditor.Workflow.Structure.ProjectItems.DummyItem, WorkflowEditor.Workflow.Structure, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+            <DummyItem Name="Insert Item here..." ModelRevision="9">
+              <NameToDisplay>Insert Item here...</NameToDisplay>
+              <ID>9befb29f-0dee-471f-907d-3df5f31d0ac8</ID>
+              <IsEnabled>true</IsEnabled>
+              <IsVirgin>true</IsVirgin>
+              <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+              <VariableMappings />
+              <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+            </DummyItem>
+          </Children>
+          <IsEnabled>true</IsEnabled>
+          <IsVirgin>true</IsVirgin>
+          <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+          <VariableMappings />
+        </DoAlwaysSection>
+      </Children>
+      <IsEnabled>true</IsEnabled>
+      <IsVirgin>true</IsVirgin>
+      <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+      <VariableMappings />
+      <PreserveFailedActionStepName>true</PreserveFailedActionStepName>
+      <SuccessState>KeepSuccessState</SuccessState>
+      <ErrorState>KeepErrorState</ErrorState>
+    </WorkflowFinalizationActivity>
+  </Children>
+  <IsEnabled>true</IsEnabled>
+  <IsVirgin>true</IsVirgin>
+  <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+  <VariableMappings />
+  <ExternalScriptsIncludes>
+    <Includes />
+  </ExternalScriptsIncludes>
+  <ShowWarnOnMeasurementDeletion>true</ShowWarnOnMeasurementDeletion>
+  <LastImageID>0</LastImageID>
+  <Author>msps</Author>
+  <CreationDate>2022-11-01T18:07:39.5203439+08:00</CreationDate>
+  <LastEditor>cassie.yang@flexport.com</LastEditor>
+  <LastModifyDate>2022-11-01T18:08:05.1501041+08:00</LastModifyDate>
+  <Reboot>false</Reboot>
+  <RebootTimeString>23:50:00</RebootTimeString>
+  <SchedulingMode>RunOnce</SchedulingMode>
+  <StartTime>0</StartTime>
+  <Interval>10</Interval>
+  <Pause>300</Pause>
+  <Phone>0123-456789</Phone>
+  <Mail>servicetrace@example.com</Mail>
+  <PauseText />
+  <Enter>1</Enter>
+  <RepositoryVersion>0</RepositoryVersion>
+  <HasLocalChanges>true</HasLocalChanges>
+  <FallbackColorDepth>Bpp_Auto</FallbackColorDepth>
+  <CompatV21_NoStatLocBlankTrimming>false</CompatV21_NoStatLocBlankTrimming>
+  <UseLegacyXmlDatafile>false</UseLegacyXmlDatafile>
+  <UseStaticPatternAnalysisImage>false</UseStaticPatternAnalysisImage>
+  <DisableKeyboardStateReset>false</DisableKeyboardStateReset>
+  <StcGuardOperationMode>true</StcGuardOperationMode>
+  <StcGuardProcessesKilledByGuard />
+  <StcGuardProcessesKillOnExit />
+  <StcGuardProcessKeepAlive />
+  <UseStaticActionStepNamePrefix>false</UseStaticActionStepNamePrefix>
+  <Location>&lt;not defined&gt;</Location>
+  <StationName>&lt;not defined&gt;</StationName>
+  <SaveServerMeasurementPoints />
+  <AllVariableSources />
+  <ExternalMeasurementPoints />
+  <masterData>
+    <CustomerGuid xsi:nil="true" />
+  </masterData>
+</WorkflowEditorProject>

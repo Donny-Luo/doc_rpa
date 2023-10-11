@@ -1,0 +1,38 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": null,
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Valid_Shipment&Sequence_24",
+        "Invalid_Shipment&Sequence_24",
+        "Valid_Record_1&Sequence_24",
+        "Valid_Record_2&Sequence_24",
+        "Downloaded_File&Sequence_19",
+        "Current_Date&Sequence_19",
+        "Shipment_Count&Sequence_28",
+        "Shipment_ID&Sequence_28",
+        "Shipment_Count_Raw&Sequence_31",
+        "First_Row&Sequence_29",
+        "Charge_Count&Sequence_29",
+        "First_Row_Raw&Sequence_29",
+        "Charge_Count_Raw&Sequence_29",
+        "Shipment_ID_Raw&Sequence_29",
+        "Current_Time&Sequence_29",
+        "Record_Last_Row_1&Sequence_34",
+        "Record_Last_Row_2&Sequence_34"
+      ],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    }
+  ]
+}

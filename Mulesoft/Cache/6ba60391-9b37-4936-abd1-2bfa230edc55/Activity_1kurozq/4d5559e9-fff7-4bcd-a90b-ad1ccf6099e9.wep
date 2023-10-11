@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WorkflowEditorProject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Send Error Notifiacation" ModelRevision="9" xml:space="preserve" WorkflowTypeId="3" Version="6.0.15086.1">
+  <NameToDisplay>Send Error Notifiacation ()</NameToDisplay>
+  <ID>4d5559e9-fff7-4bcd-a90b-ad1ccf6099e9</ID>
+  <Children type="WorkflowEditor.Activity.InitializeSection.Model.InitializeSectionActivity, WorkflowEditor.Activity.InitializeSection, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+    <InitializeSectionActivity Name="Workflow Initialization" ModelRevision="9">
+      <NameToDisplay>Workflow Initialization</NameToDisplay>
+      <ID>11be1432-93af-46a0-9620-1699f4591728</ID>
+      <Children type="WorkflowEditor.Activity.ActivityParameters.Model.ActivityParametersActivity, WorkflowEditor.Activity.ActivityParameters, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+        <ActivityParametersActivity Name="Activity Parameters" ModelRevision="9">
+          <NameToDisplay>Activity Parameters</NameToDisplay>
+          <ID>fe369264-4c35-4c18-8151-595e75931d92</ID>
+          <IsEnabled>true</IsEnabled>
+          <IsVirgin>true</IsVirgin>
+          <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+          <VariableMappings />
+          <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+          <ActivityParameterReferences />
+          <LogVariables>false</LogVariables>
+        </ActivityParametersActivity>
+      </Children>
+      <Children type="WorkflowEditor.Activity.SearchPatternGallery.Model.SearchPatternGalleryActivity, WorkflowEditor.Activity.SearchPatternGallery, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+        <SearchPatternGalleryActivity Name="Pattern Gallery" ModelRevision="9">
+          <NameToDisplay>Pattern Gallery</NameToDisplay>
+          <ID>e3f0997a-f6cf-4c0c-b240-ee29249981b1</ID>
+          <IsEnabled>true</IsEnabled>
+          <IsVirgin>true</IsVirgin>
+          <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+          <VariableMappings />
+          <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+          <SearchPatternGroups>
+            <SearchPatternGroupViewModel>
+              <ID>5393367a-58dc-4211-bee9-6f09f7c227b3</ID>
+              <Name>Ungrouped patterns</Name>
+              <Description>This is the default pattern group for all patterns.</Description>
+              <SearchPatterns />
+              <IsDefaultGroup>true</IsDefaultGroup>
+            </SearchPatternGroupViewModel>
+          </SearchPatternGroups>
+        </SearchPatternGalleryActivity>
+      </Children>
+      <Children type="WorkflowEditor.Activity.WorkflowSettings.Model.WorkflowSettingsActivity, WorkflowEditor.Activity.WorkflowSettings, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+        <WorkflowSettingsActivity Name="Settings" ModelRevision="9">
+          <NameToDisplay>Settings</NameToDisplay>
+          <ID>d8a73173-90a6-43ce-8cac-4bf923438638</ID>
+          <IsEnabled>true</IsEnabled>
+          <IsVirgin>false</IsVirgin>
+          <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+          <VariableMappings />
+          <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+          <AllowedPaths />
+          <EnvironmentVariables />
+          <BasePath>%temp%</BasePath>
+          <RemoveBasePathSubfolderOnExit>true</RemoveBasePathSubfolderOnExit>
+          <GenerateSubFolder>true</GenerateSubFolder>
+          <UseAllowedPathsLimitation>false</UseAllowedPathsLimitation>
+          <ProxySetting>NoProxy</ProxySetting>
+          <IsUseProxyAuthChecked>false</IsUseProxyAuthChecked>
+          <ProxyUrl />
+          <ProxyAccount>
+            <Name>Name</Name>
+            <ID>36b851d5-c321-4e31-8267-f5bf7aff12b5</ID>
+            <Value xsi:type="xsd:string">{"Magic":"$__ServiceTraceVariable__$","Content":{"Type":8,"UserName":"","Token":"","Password":"","CryptUser":"","CryptPassword":""},"Name":"Name","Id":"36b851d5-c321-4e31-8267-f5bf7aff12b5","Access":"RW","Tags":null}</Value>
+          </ProxyAccount>
+        </WorkflowSettingsActivity>
+      </Children>
+      <IsEnabled>true</IsEnabled>
+      <IsVirgin>true</IsVirgin>
+      <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+      <VariableMappings />
+      <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+    </InitializeSectionActivity>
+  </Children>
+  <Children type="WorkflowEditor.Workflow.Structure.ProjectItems.Measurement.ActivityWorkflowMeasurement, WorkflowEditor.Workflow.Structure, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+    <ActivityWorkflowMeasurement Name="Activity Workflow" ModelRevision="9">
+      <NameToDisplay>Activity Workflow</NameToDisplay>
+      <ID>fe7a94fa-d65f-4392-aff5-b405c0051613</ID>
+      <Children type="WorkflowEditor.Workflow.Structure.ProjectItems.Transaction, WorkflowEditor.Workflow.Structure, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+        <Transaction Name="Transaction" ModelRevision="9">
+          <NameToDisplay>Transaction</NameToDisplay>
+          <ID>52722416-fea4-40eb-ba57-35e3e6a17e47</ID>
+          <Children type="WorkflowEditor.Activity.Screenshot.Model.ScreenshotActivity, WorkflowEditor.Activity.Screenshot, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+            <ScreenshotActivity Name="Screenshot" ModelRevision="9">
+              <NameToDisplay>Screenshot</NameToDisplay>
+              <ID>f3c58804-2151-4cf4-a285-33625df369c6</ID>
+              <IsEnabled>true</IsEnabled>
+              <IsVirgin>false</IsVirgin>
+              <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+              <VariableMappings />
+              <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+              <ImageType>PNG</ImageType>
+              <X>0</X>
+              <Y>0</Y>
+              <W>0</W>
+              <H>0</H>
+              <UseCustomFolder>true</UseCustomFolder>
+              <CustomFolder>%USERPROFILE%\Downloads</CustomFolder>
+              <CustomFilename>Screenshot</CustomFilename>
+              <PercentImageShrink>50</PercentImageShrink>
+              <CapturePoint>
+                <X>0</X>
+                <Y>0</Y>
+              </CapturePoint>
+            </ScreenshotActivity>
+          </Children>
+          <Children type="WorkflowEditor.Activity.MailSession.Model.MailSessionActivity, WorkflowEditor.Activity.MailSession, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+            <MailSessionActivity Name="Mail Session" ModelRevision="9">
+              <NameToDisplay>Mail Session</NameToDisplay>
+              <ID>ff3c6424-0945-4884-a973-20f47f6a085e</ID>
+              <Children type="WorkflowEditor.Activity.SendMail.Model.SendMailActivity, WorkflowEditor.Activity.SendMail, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+                <SendMailActivity Name="Send Mail" ModelRevision="9">
+                  <NameToDisplay>Send Mail</NameToDisplay>
+                  <ID>d797f28e-b84d-4cd8-9ccc-9cb774402b2a</ID>
+                  <IsEnabled>false</IsEnabled>
+                  <IsVirgin>true</IsVirgin>
+                  <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+                  <VariableMappings />
+                  <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+                  <Receiver>
+                    <Name>Receiver</Name>
+                    <ID>cf0ed42a-c8a2-47d3-a597-8c4f86aa5bb1</ID>
+                    <Value xsi:type="xsd:string">{"Magic":"$__ServiceTraceVariable__$","Content":{"Type":6,"Length":0,"Array":[]},"Name":"Receiver","Id":"cf0ed42a-c8a2-47d3-a597-8c4f86aa5bb1","Access":"RW","Tags":null}</Value>
+                  </Receiver>
+                  <Cc>
+                    <Name>Cc</Name>
+                    <ID>68d4ad38-dd17-4c51-9ff2-7cb7cb6f8992</ID>
+                    <Value xsi:type="xsd:string">{"Magic":"$__ServiceTraceVariable__$","Content":{"Type":6,"Length":0,"Array":[]},"Name":"Cc","Id":"68d4ad38-dd17-4c51-9ff2-7cb7cb6f8992","Access":"RW","Tags":null}</Value>
+                  </Cc>
+                  <Bcc>
+                    <Name>Bcc</Name>
+                    <ID>d2ae5e20-72c1-4c45-97e2-5d34d201d719</ID>
+                    <Value xsi:type="xsd:string">{"Magic":"$__ServiceTraceVariable__$","Content":{"Type":6,"Length":0,"Array":[]},"Name":"Bcc","Id":"d2ae5e20-72c1-4c45-97e2-5d34d201d719","Access":"RW","Tags":null}</Value>
+                  </Bcc>
+                  <BodyText />
+                  <Subject />
+                  <Variable1 />
+                  <Variable2 />
+                  <Variable3 />
+                  <Variable4 />
+                  <Variable5 />
+                  <Variable6 />
+                  <Variable7 />
+                  <Variable8 />
+                  <Variable9 />
+                  <Variable10 />
+                  <FirstDirectoryPath>%STWS_BASEPATH%</FirstDirectoryPath>
+                  <FirstFileName />
+                  <SecondDirectoryPath>%STWS_BASEPATH%</SecondDirectoryPath>
+                  <SecondFileName />
+                  <ThirdDirectoryPath>%STWS_BASEPATH%</ThirdDirectoryPath>
+                  <ThirdFileName />
+                  <EnterErrorStateIfFileDoesNotExist>false</EnterErrorStateIfFileDoesNotExist>
+                </SendMailActivity>
+              </Children>
+              <IsEnabled>true</IsEnabled>
+              <IsVirgin>false</IsVirgin>
+              <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+              <VariableMappings />
+              <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+              <OperationMode>ReadAndSend</OperationMode>
+              <OutgoingServer>smtp.gmail.com</OutgoingServer>
+              <IncomingServer>imap.gmail.com</IncomingServer>
+              <IncomingUserAccount>
+                <Name>IncomingUserAccount</Name>
+                <ID>b6f2a7f1-fe24-4ae9-8992-5395a405f16c</ID>
+                <Value xsi:type="xsd:string">{"Magic":"$__ServiceTraceVariable__$","Content":{"Type":8,"UserName":"hkgairops@flexport.com","Token":"e77a110d-8d5f-46a9-8e58-81a9d5a0a3ff","Password":"","CryptUser":"hkgairops@flexport.com","CryptPassword":""},"Name":"IncomingUserAccount","Id":"b6f2a7f1-fe24-4ae9-8992-5395a405f16c","Access":"RW","Tags":null}</Value>
+              </IncomingUserAccount>
+              <OutgoingUserAccount>
+                <Name>OutgoingUserAccount</Name>
+                <ID>f61f3baf-36dc-4a6a-b5cd-f0391a2652cf</ID>
+                <Value xsi:type="xsd:string">{"Magic":"$__ServiceTraceVariable__$","Content":{"Type":8,"UserName":"","Token":"","Password":"","CryptUser":"","CryptPassword":""},"Name":"OutgoingUserAccount","Id":"f61f3baf-36dc-4a6a-b5cd-f0391a2652cf","Access":"RW","Tags":null}</Value>
+              </OutgoingUserAccount>
+              <OutgoingPort>587</OutgoingPort>
+              <IncomingPort>1993</IncomingPort>
+              <MailProtocol>IMAP</MailProtocol>
+              <CertificateType>SSL</CertificateType>
+              <SmtpCertificateType>TLS</SmtpCertificateType>
+              <TestRecipient>hk-network-ops-rpa-aaaagmzk3sctbae5z32yb5w5ia@flexport.slack.com</TestRecipient>
+              <CredentialsUsing>IncomingCredentials</CredentialsUsing>
+            </MailSessionActivity>
+          </Children>
+          <IsEnabled>true</IsEnabled>
+          <IsVirgin>true</IsVirgin>
+          <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+          <VariableMappings />
+        </Transaction>
+      </Children>
+      <IsEnabled>true</IsEnabled>
+      <IsVirgin>true</IsVirgin>
+      <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+      <VariableMappings />
+      <RecordTimerSum>false</RecordTimerSum>
+      <Application>&lt;not defined&gt;</Application>
+      <BP>&lt;not defined&gt;</BP>
+      <Client>000</Client>
+      <Customer>&lt;not defined&gt;</Customer>
+      <Server>Server</Server>
+      <System>&lt;not defined&gt;</System>
+      <ErrorCycles>1</ErrorCycles>
+      <ReduceErrorCycleAtDesignTime>true</ReduceErrorCycleAtDesignTime>
+      <DelayBetweenRetries>60</DelayBetweenRetries>
+      <Timeout>5</Timeout>
+      <TestCustomer>n/a for RPA Workflows!</TestCustomer>
+      <TestSystem>n/a for RPA Workflows!</TestSystem>
+      <TestClient>n/a for RPA Workflows!</TestClient>
+      <TestApplication>n/a for RPA Workflows!</TestApplication>
+      <TestLocation>n/a for RPA Workflows!</TestLocation>
+      <TestStation>n/a for RPA Workflows!</TestStation>
+      <AvailableVariableSources />
+    </ActivityWorkflowMeasurement>
+  </Children>
+  <Children type="WorkflowEditor.ControlBlocks.WorkflowFinalization.Model.WorkflowFinalizationActivity, WorkflowEditor.ControlBlocks, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+    <WorkflowFinalizationActivity Name="Workflow Finalization" ModelRevision="9">
+      <NameToDisplay>Workflow Finalization</NameToDisplay>
+      <ID>aa23a6a1-3402-4a8e-b562-09fd5e951eb6</ID>
+      <Children type="WorkflowEditor.ControlBlocks.WorkflowFinalization.Model.OnSuccessSection, WorkflowEditor.ControlBlocks, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+        <OnSuccessSection Name="Workflow run succeeded" ModelRevision="9">
+          <NameToDisplay>Workflow run succeeded</NameToDisplay>
+          <ID>29c1d30c-12e2-4f98-86ee-08d112e6ed6b</ID>
+          <Children type="WorkflowEditor.Workflow.Structure.ProjectItems.DummyItem, WorkflowEditor.Workflow.Structure, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+            <DummyItem Name="Insert Item here..." ModelRevision="9">
+              <NameToDisplay>Insert Item here...</NameToDisplay>
+              <ID>30862cfa-5eef-480d-8888-12306455c4a9</ID>
+              <IsEnabled>true</IsEnabled>
+              <IsVirgin>true</IsVirgin>
+              <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+              <VariableMappings />
+              <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+            </DummyItem>
+          </Children>
+          <IsEnabled>true</IsEnabled>
+          <IsVirgin>true</IsVirgin>
+          <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+          <VariableMappings />
+        </OnSuccessSection>
+      </Children>
+      <Children type="WorkflowEditor.ControlBlocks.WorkflowFinalization.Model.OnErrorSection, WorkflowEditor.ControlBlocks, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+        <OnErrorSection Name="Workflow run failed" ModelRevision="9">
+          <NameToDisplay>Workflow run failed</NameToDisplay>
+          <ID>ead57f95-822f-4ee7-a0c9-413a4b12fde7</ID>
+          <Children type="WorkflowEditor.Workflow.Structure.ProjectItems.DummyItem, WorkflowEditor.Workflow.Structure, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+            <DummyItem Name="Insert Item here..." ModelRevision="9">
+              <NameToDisplay>Insert Item here...</NameToDisplay>
+              <ID>56c157cb-704c-481b-b455-d48464d751f1</ID>
+              <IsEnabled>true</IsEnabled>
+              <IsVirgin>true</IsVirgin>
+              <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+              <VariableMappings />
+              <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+            </DummyItem>
+          </Children>
+          <IsEnabled>true</IsEnabled>
+          <IsVirgin>true</IsVirgin>
+          <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+          <VariableMappings />
+        </OnErrorSection>
+      </Children>
+      <Children type="WorkflowEditor.ControlBlocks.WorkflowFinalization.Model.DoAlwaysSection, WorkflowEditor.ControlBlocks, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+        <DoAlwaysSection Name="Common finalization handling" ModelRevision="9">
+          <NameToDisplay>Common finalization handling</NameToDisplay>
+          <ID>d9eb03c5-b4c7-4da7-87ea-d81ba9ef61a4</ID>
+          <Children type="WorkflowEditor.Workflow.Structure.ProjectItems.DummyItem, WorkflowEditor.Workflow.Structure, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+            <DummyItem Name="Insert Item here..." ModelRevision="9">
+              <NameToDisplay>Insert Item here...</NameToDisplay>
+              <ID>2b6b4916-73c3-483f-bc35-df9b280cbff3</ID>
+              <IsEnabled>true</IsEnabled>
+              <IsVirgin>true</IsVirgin>
+              <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+              <VariableMappings />
+              <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+            </DummyItem>
+          </Children>
+          <IsEnabled>true</IsEnabled>
+          <IsVirgin>true</IsVirgin>
+          <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+          <VariableMappings />
+        </DoAlwaysSection>
+      </Children>
+      <IsEnabled>true</IsEnabled>
+      <IsVirgin>true</IsVirgin>
+      <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+      <VariableMappings />
+      <PreserveFailedActionStepName>true</PreserveFailedActionStepName>
+      <SuccessState>KeepSuccessState</SuccessState>
+      <ErrorState>KeepErrorState</ErrorState>
+    </WorkflowFinalizationActivity>
+  </Children>
+  <IsEnabled>true</IsEnabled>
+  <IsVirgin>true</IsVirgin>
+  <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+  <VariableMappings />
+  <ExternalScriptsIncludes>
+    <Includes />
+  </ExternalScriptsIncludes>
+  <ShowWarnOnMeasurementDeletion>true</ShowWarnOnMeasurementDeletion>
+  <LastImageID>0</LastImageID>
+  <Author>kmok</Author>
+  <CreationDate>2022-10-11T14:48:49.975183+08:00</CreationDate>
+  <LastEditor>flam@flexport.com</LastEditor>
+  <LastModifyDate>2022-10-12T21:35:53.8442332+08:00</LastModifyDate>
+  <Reboot>false</Reboot>
+  <RebootTimeString>23:50:00</RebootTimeString>
+  <SchedulingMode>RunOnce</SchedulingMode>
+  <StartTime>0</StartTime>
+  <Interval>10</Interval>
+  <Pause>300</Pause>
+  <Phone>0123-456789</Phone>
+  <Mail>servicetrace@example.com</Mail>
+  <PauseText />
+  <Enter>1</Enter>
+  <RepositoryVersion>0</RepositoryVersion>
+  <HasLocalChanges>true</HasLocalChanges>
+  <FallbackColorDepth>Bpp_Auto</FallbackColorDepth>
+  <CompatV21_NoStatLocBlankTrimming>false</CompatV21_NoStatLocBlankTrimming>
+  <UseLegacyXmlDatafile>false</UseLegacyXmlDatafile>
+  <UseStaticPatternAnalysisImage>false</UseStaticPatternAnalysisImage>
+  <DisableKeyboardStateReset>false</DisableKeyboardStateReset>
+  <StcGuardOperationMode>true</StcGuardOperationMode>
+  <StcGuardProcessesKilledByGuard />
+  <StcGuardProcessesKillOnExit />
+  <StcGuardProcessKeepAlive />
+  <UseStaticActionStepNamePrefix>false</UseStaticActionStepNamePrefix>
+  <Location>&lt;not defined&gt;</Location>
+  <StationName>&lt;not defined&gt;</StationName>
+  <SaveServerMeasurementPoints />
+  <AllVariableSources />
+  <ExternalMeasurementPoints />
+  <masterData>
+    <CustomerGuid xsi:nil="true" />
+  </masterData>
+</WorkflowEditorProject>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RpaSolution xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Batch Document Uploader">
+  <Id>6ba60391-9b37-4936-abd1-2bfa230edc55</Id>
+  <Author>flam@flexport.com</Author>
+  <LastEditor>RPA</LastEditor>
+  <LastModifyDate>2022-11-01T18:09:51.4876905+08:00</LastModifyDate>
+  <IsLocked>false</IsLocked>
+  <Description />
+  <LastBusinessProcessEdit>2022-10-19T09:49:58.661933Z</LastBusinessProcessEdit>
+  <ActivityParameters>
+    <ActivityParameterVariableBase xsi:type="BoolActivityParameter">
+      <Name>candownloadfile</Name>
+      <ID>00000000-0000-0000-0000-000000000000</ID>
+      <Value xsi:type="xsd:string">{"Magic":"$__ServiceTraceVariable__$","Content":{"Type":2,"BoolValue":false},"Name":"candownloadfile","Id":"00000000-0000-0000-0000-000000000000","Access":"RW","Tags":null}</Value>
+      <ActivityParameterScope>1</ActivityParameterScope>
+    </ActivityParameterVariableBase>
+    <ActivityParameterVariableBase xsi:type="BoolActivityParameter">
+      <Name>canuploaddoc</Name>
+      <ID>00000000-0000-0000-0000-000000000000</ID>
+      <Value xsi:type="xsd:string">{"Magic":"$__ServiceTraceVariable__$","Content":{"Type":2,"BoolValue":false},"Name":"canuploaddoc","Id":"00000000-0000-0000-0000-000000000000","Access":"RW","Tags":null}</Value>
+      <ActivityParameterScope>1</ActivityParameterScope>
+    </ActivityParameterVariableBase>
+    <ActivityParameterVariableBase xsi:type="BoolActivityParameter">
+      <Name>canlogin</Name>
+      <ID>00000000-0000-0000-0000-000000000000</ID>
+      <Value xsi:type="xsd:string">{"Magic":"$__ServiceTraceVariable__$","Content":{"Type":2,"BoolValue":false},"Name":"canlogin","Id":"00000000-0000-0000-0000-000000000000","Access":"RW","Tags":null}</Value>
+      <ActivityParameterScope>1</ActivityParameterScope>
+    </ActivityParameterVariableBase>
+    <ActivityParameterVariableBase xsi:type="WebSessionIdActivityParameter">
+      <Name>chrome_start</Name>
+      <ID>00000000-0000-0000-0000-000000000000</ID>
+      <Value xsi:type="xsd:string">{"Magic":"$__ServiceTraceVariable__$","Content":{"Type":12,"Id":"00000000-0000-0000-0000-000000000000"},"Name":"chrome_start","Id":"00000000-0000-0000-0000-000000000000","Access":"RW","Tags":null}</Value>
+      <ActivityParameterScope>1</ActivityParameterScope>
+      <ValueInUserInputFormat>00000000-0000-0000-0000-000000000000</ValueInUserInputFormat>
+    </ActivityParameterVariableBase>
+  </ActivityParameters>
+  <DesignStudioVersion>6.0.15086.1</DesignStudioVersion>
+  <BusinessProcessVersion>0</BusinessProcessVersion>
+  <ScreenResolution>
+    <Width>1920</Width>
+    <Height>1080</Height>
+  </ScreenResolution>
+  <InternalCacheNote>11/1/2022 6:08:29 PM Process was created from repository data, downloaded by user RPA on machine 'JOHNZHONG-PC' with application v.6.0.15086.1; </InternalCacheNote>
+</RpaSolution>

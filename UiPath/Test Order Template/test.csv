@@ -1,0 +1,76 @@
+﻿Order Template Name
+"OT-1340: PVG - Shanghai - China-GDL - Guadalajara - Mexico-Air-P2D-FCA-Express
+
+PVG-GDL-Express (NOT via LAX, avoid using until notice) - 5 days"
+"OT-1341: PVG - Shanghai - China-LAX - Los Angeles - CA-Air-P2D-FCA-Standard
+
+PVG-GDL (via LAX)-Standard - FCA - 8 days"
+"OT-1323: HKG - Hong Kong - Hong Kong-AMS - Amsterdam - Netherlands-Air-P2D-FCA-Standard
+
+HKG-PRG (via AMS) - FCA - Standard - 8 days"
+"OT-1352: PVG - Shanghai - China-LAX - Los Angeles - CA-Air-P2D-FCA-Express
+
+PVG-GDL-Express (via LAX, please use this) - 5 days"
+"OT-1324: HKG - Hong Kong - Hong Kong-AMS - Amsterdam - Netherlands-Air-P2D-FCA-Deferred
+
+HKG-PRG (via AMS) - FCA - Deferred - 12 days"
+"OT-938: HKG - Hong Kong - Hong Kong-LAX - Los Angeles - CA-Air-P2D-FCA-Deferred
+
+HKG-ELP-FCA-Deferred - 12 days"
+"OT-1314: VNSGN-USLAX-Air-P2D-FCA
+
+SGN-LAX-Express-FCA (no need pick-up) - 5 days"
+"OT-1303: PVG - Shanghai - China-LAX - Los Angeles - CA-Air-P2D-FCA-Standard
+
+PVG-ELP - FCA-Standard -8 days"
+"OT-1327: HKG - Hong Kong - Hong Kong-AMS - Amsterdam - Netherlands-Air-P2D-FCA-Express
+
+HKG-PRG (via AMS) - FCA - Express - 5 days"
+"OT-1342: PVG - Shanghai - China-LAX - Los Angeles - CA-Air-P2D-FCA-Deferred
+
+PVG-GDL (via LAX)-Deferred - FCA - 12 days"
+"OT-939: PVG - Shanghai - China-LAX - Los Angeles - CA-Air-P2D-FCA-Express
+
+PVG-ELP - FCA-Express (No Magnetic) - 5 days"
+"OT-1322: VNSGN-USLAX-Air-D2D-FCA
+
+SGN-LAX-Deferred -FCA (need pick-up from general) - 12 days"
+"OT-1316: SGN - Ho Chi Minh City - Vietnam-LAX - Los Angeles - CA-Air-P2D-FCA-Standard
+
+SGN-ELP-Standard-FCA (no need pick-up) - 8 days"
+"OT-1317: VNSGN-USLAX-Air-P2D-FCA
+
+SGN-LAX-Deferred-FCA (no need pick-up) - 12 days"
+"OT-1319: VNSGN-USLAX-Air-D2D-FCA
+
+SGN-LAX-Deferred-FCA (need pick-up from bonded) - 12 days"
+"OT-1320: VNSGN-USLAX-Air-D2D-FCA
+
+SGN-LAX-Express-FCA (need pick-up from general warehouse) - 5 days"
+"OT-1302: HKG - Hong Kong - Hong Kong-LAX - Los Angeles - CA-Air-P2D-FCA-Express
+
+HKG-ELP-FCA-Express - 5 days"
+"OT-1346: HKG - Hong Kong - Hong Kong-LAX - Los Angeles - CA-Air-P2D-FCA-Standard
+
+HKG-ELP-FCA-Standard - 8 days"
+"OT-1318: SGN - Ho Chi Minh City - Vietnam-LAX - Los Angeles - CA-Air-D2D-FCA-Standard
+
+SGN-LAX-Standard-FCA (need pick-up from bonded)- 8 days"
+"OT-1336: HKG - Hong Kong - Hong Kong-LAX - Los Angeles - CA-Air-P2D-FCA-Standard
+
+HKG-GDL (via LAX) - Standard - FCA - 8 days"
+"OT-1337: HKG - Hong Kong - Hong Kong-LAX - Los Angeles - CA-Air-P2D-FCA-Deferred
+
+HKG-GDL (via LAX)-FCA- Deferred - 12 days"
+"OT-1315: SGN - Ho Chi Minh City - Vietnam-LAX - Los Angeles - CA-Air-D2D-FCA-Express
+
+SGN-ELP-Express-FCA (need pick-up from bonded warehouse) - 5 days"
+"OT-1321: SGN - Ho Chi Minh City - Vietnam-LAX - Los Angeles - CA-Air-D2D-FCA-Standard
+
+SGN-LAX-Standard-FCA (need pick-up from general) - 8 days"
+"OT-1335: HKG - Hong Kong - Hong Kong-GDL - Guadalajara - Mexico-Air-P2D-FCA-Express
+
+HKG-GDL- Express (not via LAX)(please use this) - 5 days"
+"OT-1351: HKG - Hong Kong - Hong Kong-LAX - Los Angeles - CA-Air-P2D-FCA-Express
+
+HKG-GDL- Express (via LAX)(do not use) - 5 days"

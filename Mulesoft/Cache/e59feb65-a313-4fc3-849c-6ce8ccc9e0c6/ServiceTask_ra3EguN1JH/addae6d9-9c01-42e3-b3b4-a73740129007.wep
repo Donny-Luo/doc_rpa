@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WorkflowEditorProject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Import data into Online Template" ModelRevision="9" xml:space="preserve" WorkflowTypeId="3" Version="6.0.15086.1">
+  <NameToDisplay>Import data into Online Template ()</NameToDisplay>
+  <ID>addae6d9-9c01-42e3-b3b4-a73740129007</ID>
+  <Children type="WorkflowEditor.Activity.InitializeSection.Model.InitializeSectionActivity, WorkflowEditor.Activity.InitializeSection, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+    <InitializeSectionActivity Name="Workflow Initialization" ModelRevision="9">
+      <NameToDisplay>Workflow Initialization</NameToDisplay>
+      <ID>918b7cee-3127-4b4d-bb03-80007e869aef</ID>
+      <Children type="WorkflowEditor.Activity.ActivityParameters.Model.ActivityParametersActivity, WorkflowEditor.Activity.ActivityParameters, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+        <ActivityParametersActivity Name="Activity Parameters" ModelRevision="9">
+          <NameToDisplay>Activity Parameters</NameToDisplay>
+          <ID>f0d096e6-126a-41a6-a813-390c0ecfbf49</ID>
+          <IsEnabled>true</IsEnabled>
+          <IsVirgin>false</IsVirgin>
+          <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+          <VariableMappings />
+          <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+          <ActivityParameterReferences>
+            <ActivityParameterVariableBase xsi:type="BoolActivityParameter">
+              <Name>bDownldSuccessful</Name>
+              <ID>00000000-0000-0000-0000-000000000000</ID>
+              <Value xsi:type="xsd:string">{"Magic":"$__ServiceTraceVariable__$","Content":{"Type":2,"BoolValue":false},"Name":"bDownldSuccessful","Id":"00000000-0000-0000-0000-000000000000","Access":"RW","Tags":null}</Value>
+              <ActivityParameterScope>1</ActivityParameterScope>
+            </ActivityParameterVariableBase>
+            <ActivityParameterVariableBase xsi:type="WebSessionIdActivityParameter">
+              <Name>dfltWebSession</Name>
+              <ID>00000000-0000-0000-0000-000000000000</ID>
+              <Value xsi:type="xsd:string">{"Magic":"$__ServiceTraceVariable__$","Content":{"Type":12,"Id":"00000000-0000-0000-0000-000000000000"},"Name":"dfltWebSession","Id":"00000000-0000-0000-0000-000000000000","Access":"RW","Tags":null}</Value>
+              <ActivityParameterScope>1</ActivityParameterScope>
+              <ValueInUserInputFormat>00000000-0000-0000-0000-000000000000</ValueInUserInputFormat>
+            </ActivityParameterVariableBase>
+            <ActivityParameterVariableBase xsi:type="UserAccountActivityParameter">
+              <Name>invoicelyCreds</Name>
+              <ID>00000000-0000-0000-0000-000000000000</ID>
+              <Value xsi:type="xsd:string">{"Magic":"$__ServiceTraceVariable__$","Content":{"Type":8,"UserName":"rpabottest123@gmail.com","Token":"8dea81ad-ffcb-4c57-9af0-9cb0309ceeb3","Password":"","CryptUser":"rpabottest123@gmail.com","CryptPassword":""},"Name":"invoicelyCreds","Id":"00000000-0000-0000-0000-000000000000","Access":"RW","Tags":null}</Value>
+              <ActivityParameterScope>1</ActivityParameterScope>
+            </ActivityParameterVariableBase>
+            <ActivityParameterVariableBase xsi:type="IntegerActivityParameter">
+              <Name>nRowCounter</Name>
+              <ID>00000000-0000-0000-0000-000000000000</ID>
+              <Value xsi:type="xsd:string">{"Magic":"$__ServiceTraceVariable__$","Content":{"Type":0,"IntValue":0},"Name":"nRowCounter","Id":"00000000-0000-0000-0000-000000000000","Access":"RW","Tags":null}</Value>
+              <ActivityParameterScope>1</ActivityParameterScope>
+            </ActivityParameterVariableBase>
+            <ActivityParameterVariableBase xsi:type="AlphanumericActivityParameter">
+              <Name>nColumnCounter</Name>
+              <ID>00000000-0000-0000-0000-000000000000</ID>
+              <Value xsi:type="xsd:string">{"Magic":"$__ServiceTraceVariable__$","Content":{"Type":1,"StringValue":""},"Name":"nColumnCounter","Id":"00000000-0000-0000-0000-000000000000","Access":"RW","Tags":null}</Value>
+              <ActivityParameterScope>1</ActivityParameterScope>
+            </ActivityParameterVariableBase>
+          </ActivityParameterReferences>
+          <LogVariables>false</LogVariables>
+        </ActivityParametersActivity>
+      </Children>
+      <Children type="WorkflowEditor.Activity.SearchPatternGallery.Model.SearchPatternGalleryActivity, WorkflowEditor.Activity.SearchPatternGallery, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+        <SearchPatternGalleryActivity Name="Pattern Gallery" ModelRevision="9">
+          <NameToDisplay>Pattern Gallery</NameToDisplay>
+          <ID>9d0708f0-c9df-4804-b55a-f46c14cc7992</ID>
+          <IsEnabled>true</IsEnabled>
+          <IsVirgin>true</IsVirgin>
+          <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+          <VariableMappings />
+          <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+          <SearchPatternGroups>
+            <SearchPatternGroupViewModel>
+              <ID>9912572e-2a19-45db-8703-a5af33510502</ID>
+              <Name>Ungrouped patterns</Name>
+              <Description>This is the default pattern group for all patterns.</Description>
+              <SearchPatterns />
+              <IsDefaultGroup>true</IsDefaultGroup>
+            </SearchPatternGroupViewModel>
+          </SearchPatternGroups>
+        </SearchPatternGalleryActivity>
+      </Children>
+      <Children type="WorkflowEditor.Activity.WorkflowSettings.Model.WorkflowSettingsActivity, WorkflowEditor.Activity.WorkflowSettings, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+        <WorkflowSettingsActivity Name="Settings" ModelRevision="9">
+          <NameToDisplay>Settings</NameToDisplay>
+          <ID>5c8895d2-c5af-4ab8-8c70-bf47cea31d74</ID>
+          <IsEnabled>true</IsEnabled>
+          <IsVirgin>false</IsVirgin>
+          <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+          <VariableMappings />
+          <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+          <AllowedPaths />
+          <EnvironmentVariables />
+          <BasePath>%temp%</BasePath>
+          <RemoveBasePathSubfolderOnExit>true</RemoveBasePathSubfolderOnExit>
+          <GenerateSubFolder>true</GenerateSubFolder>
+          <UseAllowedPathsLimitation>false</UseAllowedPathsLimitation>
+          <ProxySetting>NoProxy</ProxySetting>
+          <IsUseProxyAuthChecked>false</IsUseProxyAuthChecked>
+          <ProxyUrl />
+          <ProxyAccount>
+            <Name>Name</Name>
+            <ID>f353cef5-7af3-4597-9fd9-7e70870077ae</ID>
+            <Value xsi:type="xsd:string">{"Magic":"$__ServiceTraceVariable__$","Content":{"Type":8,"UserName":"","Token":"","Password":"","CryptUser":"","CryptPassword":""},"Name":"Name","Id":"f353cef5-7af3-4597-9fd9-7e70870077ae","Access":"RW","Tags":null}</Value>
+          </ProxyAccount>
+        </WorkflowSettingsActivity>
+      </Children>
+      <IsEnabled>true</IsEnabled>
+      <IsVirgin>true</IsVirgin>
+      <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+      <VariableMappings />
+      <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+    </InitializeSectionActivity>
+  </Children>
+  <Children type="WorkflowEditor.Workflow.Structure.ProjectItems.Measurement.ActivityWorkflowMeasurement, WorkflowEditor.Workflow.Structure, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+    <ActivityWorkflowMeasurement Name="Activity Workflow" ModelRevision="9">
+      <NameToDisplay>Activity Workflow</NameToDisplay>
+      <ID>7edac52b-c6ec-46ed-9ab0-be66996cb2f3</ID>
+      <Children type="WorkflowEditor.Workflow.Structure.ProjectItems.Transaction, WorkflowEditor.Workflow.Structure, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+        <Transaction Name="Transaction" ModelRevision="9">
+          <NameToDisplay>Transaction</NameToDisplay>
+          <ID>4f1c64aa-2c0f-4e06-bb98-05bc65e81ea9</ID>
+          <Children type="WorkflowEditor.ControlBlocks.BlockSection.Model.BlockSectionActivity, WorkflowEditor.ControlBlocks, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+            <BlockSectionActivity Name="Get Number of Rows &amp; Columns in CSV" ModelRevision="9">
+              <NameToDisplay>Get Number of Rows &amp; Columns in CSV (Group)</NameToDisplay>
+              <ID>b70f68e3-12e6-4840-b7a2-ff90127469aa</ID>
+              <Children type="WorkflowEditor.ControlBlocks.ReadFile.Model.ReadFileActivity, WorkflowEditor.ControlBlocks, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+                <ReadFileActivity Name="File controlled Loop" ModelRevision="9">
+                  <NameToDisplay>File controlled Loop</NameToDisplay>
+                  <ID>aa3d9927-f1bd-41ad-9e51-3a65c7e21173</ID>
+                  <Children type="WorkflowEditor.Activity.StringToArray.Model.StringToArrayActivity, WorkflowEditor.Activity.StringToArray, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+                    <StringToArrayActivity Name="String to Array" ModelRevision="9">
+                      <NameToDisplay>String to Array</NameToDisplay>
+                      <ID>8941abe6-1753-4093-a357-0c5a6cee455d</ID>
+                      <IsEnabled>true</IsEnabled>
+                      <IsVirgin>false</IsVirgin>
+                      <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+                      <VariableMappings>
+                        <VariableMapping>
+                          <OwnerID>aa3d9927-f1bd-41ad-9e51-3a65c7e21173</OwnerID>
+                          <OwnerName>File controlled Loop</OwnerName>
+                          <SourceName>Shipment Id,Charge Type,POD,Container #,Available Time,Start Time,End Time ,No of Days,Unique Shipment Row</SourceName>
+                          <SourceType>STRING</SourceType>
+                          <TargetType>STRING</TargetType>
+                          <TargetName>InputString</TargetName>
+                        </VariableMapping>
+                      </VariableMappings>
+                      <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+                      <InputString />
+                      <SeparatorAsArray>
+                        <char>44</char>
+                      </SeparatorAsArray>
+                    </StringToArrayActivity>
+                  </Children>
+                  <Children type="WorkflowEditor.Activity.GetArrayCount.Model.GetArrayCountActivity, WorkflowEditor.Activity.GetArrayCount, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+                    <GetArrayCountActivity Name="Get Array Count" ModelRevision="9">
+                      <NameToDisplay>Get Array Count (Get Array Count mapped to String to Array.ResultAsArray)</NameToDisplay>
+                      <ID>f116dbc5-6b74-40cb-8ff2-6c78be16c0cc</ID>
+                      <IsEnabled>true</IsEnabled>
+                      <IsVirgin>false</IsVirgin>
+                      <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+                      <VariableMappings>
+                        <VariableMapping>
+                          <OwnerID>8941abe6-1753-4093-a357-0c5a6cee455d</OwnerID>
+                          <OwnerName>String to Array</OwnerName>
+                          <SourceName>ResultAsArray</SourceName>
+                          <SourceType>ARRAY</SourceType>
+                          <TargetType>ARRAY</TargetType>
+                          <TargetName>Variable</TargetName>
+                        </VariableMapping>
+                      </VariableMappings>
+                      <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+                      <Variable />
+                    </GetArrayCountActivity>
+                  </Children>
+                  <Children type="WorkflowEditor.Activity.SetVariable.Model.SetVariableActivity, WorkflowEditor.Activity.SetVariable, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+                    <SetVariableActivity Name="Set Number of Columns" ModelRevision="9">
+                      <NameToDisplay>Set Number of Columns (Set Variable)</NameToDisplay>
+                      <ID>aaf77705-8b76-4ad0-a3e5-761560525d54</ID>
+                      <IsEnabled>true</IsEnabled>
+                      <IsVirgin>false</IsVirgin>
+                      <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+                      <VariableMappings>
+                        <VariableMapping>
+                          <OwnerID>f0d096e6-126a-41a6-a813-390c0ecfbf49</OwnerID>
+                          <OwnerName>Activity Parameters</OwnerName>
+                          <SourceName>nColumnCounter</SourceName>
+                          <SourceType>STRING</SourceType>
+                          <TargetType>STRING</TargetType>
+                          <TargetName>ModifiedVariable</TargetName>
+                        </VariableMapping>
+                        <VariableMapping>
+                          <OwnerID>f116dbc5-6b74-40cb-8ff2-6c78be16c0cc</OwnerID>
+                          <OwnerName>Get Array Count</OwnerName>
+                          <SourceName>Array Count</SourceName>
+                          <SourceType>INT</SourceType>
+                          <TargetType>STRING</TargetType>
+                          <TargetName>NewValue</TargetName>
+                        </VariableMapping>
+                      </VariableMappings>
+                      <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+                      <NewValue />
+                    </SetVariableActivity>
+                  </Children>
+                  <Children type="WorkflowEditor.Activity.MathOperations.Model.MathOperationsActivity, WorkflowEditor.Activity.MathOperations, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+                    <MathOperationsActivity Name="Math Operations" ModelRevision="9">
+                      <NameToDisplay>Math Operations ({a}={a}+1)</NameToDisplay>
+                      <ID>12725c12-8262-44ba-866f-37517b23aa00</ID>
+                      <IsEnabled>true</IsEnabled>
+                      <IsVirgin>false</IsVirgin>
+                      <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+                      <VariableMappings>
+                        <VariableMapping>
+                          <OwnerID>f0d096e6-126a-41a6-a813-390c0ecfbf49</OwnerID>
+                          <OwnerName>Activity Parameters</OwnerName>
+                          <SourceName>nRowCounter</SourceName>
+                          <SourceType>INT</SourceType>
+                          <TargetType>Number</TargetType>
+                          <TargetName>Variable1</TargetName>
+                        </VariableMapping>
+                      </VariableMappings>
+                      <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+                      <Variable1>0</Variable1>
+                      <Variable2>0</Variable2>
+                      <Variable3>0</Variable3>
+                      <Variable4>0</Variable4>
+                      <Variable5>0</Variable5>
+                      <Variable6>0</Variable6>
+                      <Variable7>0</Variable7>
+                      <Variable8>0</Variable8>
+                      <Variable9>0</Variable9>
+                      <Variable10>0</Variable10>
+                      <MathExpressionInUserInputFormat>{a}={a}+1</MathExpressionInUserInputFormat>
+                      <OutboundVariableType>Integer</OutboundVariableType>
+                    </MathOperationsActivity>
+                  </Children>
+                  <Children type="WorkflowEditor.Activity.SetVariable.Model.SetVariableActivity, WorkflowEditor.Activity.SetVariable, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+                    <SetVariableActivity Name="Set Variable" ModelRevision="9">
+                      <NameToDisplay>Set Variable</NameToDisplay>
+                      <ID>13b7eed6-2a3b-49ec-aae7-e08698e7bea0</ID>
+                      <IsEnabled>true</IsEnabled>
+                      <IsVirgin>false</IsVirgin>
+                      <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+                      <VariableMappings>
+                        <VariableMapping>
+                          <OwnerID>f0d096e6-126a-41a6-a813-390c0ecfbf49</OwnerID>
+                          <OwnerName>Activity Parameters</OwnerName>
+                          <SourceName>nRowCounter</SourceName>
+                          <SourceType>INT</SourceType>
+                          <TargetType>STRING</TargetType>
+                          <TargetName>ModifiedVariable</TargetName>
+                        </VariableMapping>
+                        <VariableMapping>
+                          <OwnerID>12725c12-8262-44ba-866f-37517b23aa00</OwnerID>
+                          <OwnerName>Math Operations</OwnerName>
+                          <SourceName>ResultAsInt</SourceName>
+                          <SourceType>INT</SourceType>
+                          <TargetType>STRING</TargetType>
+                          <TargetName>NewValue</TargetName>
+                        </VariableMapping>
+                      </VariableMappings>
+                      <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+                      <NewValue />
+                    </SetVariableActivity>
+                  </Children>
+                  <IsEnabled>true</IsEnabled>
+                  <IsVirgin>false</IsVirgin>
+                  <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+                  <VariableMappings />
+                  <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+                  <UseTypeTextOnly>false</UseTypeTextOnly>
+                  <RandomFileRead>false</RandomFileRead>
+                  <HasHeaderLine>true</HasHeaderLine>
+                  <FileAndPath>C:\RPADemo\OSRA22\DefaultShipmentTracker.csv</FileAndPath>
+                  <IsIn3rdParty>false</IsIn3rdParty>
+                  <LimitIterations>false</LimitIterations>
+                  <IterationCount>1</IterationCount>
+                  <UseSeperateExecutionPath>false</UseSeperateExecutionPath>
+                  <SeperateExecutionPath />
+                  <IsDynamic>false</IsDynamic>
+                  <Columns>
+                    <ColumnInfo>
+                      <AvailableVariableTypes>
+                        <VariableType>STRING</VariableType>
+                      </AvailableVariableTypes>
+                      <ColumnName>Shipment Id,Charge Type,POD,Container #,Available Time,Start Time,End Time ,No of Days,Unique Shipment Row</ColumnName>
+                      <ColumnType>STRING</ColumnType>
+                      <SelectedType>STRING</SelectedType>
+                      <TextType>STRING</TextType>
+                      <FilterString />
+                      <FilterUseRegex>false</FilterUseRegex>
+                    </ColumnInfo>
+                  </Columns>
+                  <FullStaticDataGrid>
+                    <GridData>
+                      <ArrayOfString>
+                        <string>7873489,Detention,HJHGT,GA6778JK89,9/23/2022,9/23/2022,9/30/2022,1,98432</string>
+                      </ArrayOfString>
+                      <ArrayOfString>
+                        <string>7873490,Detention,CJHGT,GA6778JK90,9/24/2022,9/24/2022,10/1/2022,2,98433</string>
+                      </ArrayOfString>
+                      <ArrayOfString>
+                        <string>7873490,Detention,HWSD,GA6778JK91,9/25/2022,9/25/2022,10/2/2022,3,98434</string>
+                      </ArrayOfString>
+                      <ArrayOfString>
+                        <string>7873492,Detention,HJHGT,GA6778JK92,9/26/2022,9/26/2022,10/3/2022,4,98435</string>
+                      </ArrayOfString>
+                      <ArrayOfString>
+                        <string>7873492,Detention,BBHGT,GA6778JK93,9/27/2022,9/27/2022,10/4/2022,5,98436</string>
+                      </ArrayOfString>
+                      <ArrayOfString>
+                        <string>7873492,Detention,HWSD,GA6778JK94,9/28/2022,9/28/2022,10/5/2022,6,98437</string>
+                      </ArrayOfString>
+                      <ArrayOfString>
+                        <string>7873495,Detention,HWSD,,9/29/2022,9/29/2022,,7,98438</string>
+                      </ArrayOfString>
+                      <ArrayOfString>
+                        <string>7873496,Detention,BBHGT,GA6778JK96,9/30/2022,9/30/2022,10/7/2022,8,98439</string>
+                      </ArrayOfString>
+                      <ArrayOfString>
+                        <string>7873497,Detention,HJHGT,,,,,,98440</string>
+                      </ArrayOfString>
+                      <ArrayOfString>
+                        <string>7873498,Detention,,,,10/2/2022,10/9/2022,10,98441</string>
+                      </ArrayOfString>
+                      <ArrayOfString>
+                        <string>7873499,Detention,BBHGT,GA6778JK99,10/3/2022,10/3/2022,10/10/2022,11,98442</string>
+                      </ArrayOfString>
+                      <ArrayOfString>
+                        <string>7873500,Detention,,,,,,,98443</string>
+                      </ArrayOfString>
+                      <ArrayOfString>
+                        <string>7873501,Detention,HJHGT,GA6778JK101,10/5/2022,10/5/2022,10/12/2022,13,98444</string>
+                      </ArrayOfString>
+                    </GridData>
+                  </FullStaticDataGrid>
+                  <FilteredStaticDataGrid>
+                    <GridData>
+                      <ArrayOfString>
+                        <string>7873489,Detention,HJHGT,GA6778JK89,9/23/2022,9/23/2022,9/30/2022,1,98432</string>
+                      </ArrayOfString>
+                      <ArrayOfString>
+                        <string>7873490,Detention,CJHGT,GA6778JK90,9/24/2022,9/24/2022,10/1/2022,2,98433</string>
+                      </ArrayOfString>
+                      <ArrayOfString>
+                        <string>7873490,Detention,HWSD,GA6778JK91,9/25/2022,9/25/2022,10/2/2022,3,98434</string>
+                      </ArrayOfString>
+                      <ArrayOfString>
+                        <string>7873492,Detention,HJHGT,GA6778JK92,9/26/2022,9/26/2022,10/3/2022,4,98435</string>
+                      </ArrayOfString>
+                      <ArrayOfString>
+                        <string>7873492,Detention,BBHGT,GA6778JK93,9/27/2022,9/27/2022,10/4/2022,5,98436</string>
+                      </ArrayOfString>
+                      <ArrayOfString>
+                        <string>7873492,Detention,HWSD,GA6778JK94,9/28/2022,9/28/2022,10/5/2022,6,98437</string>
+                      </ArrayOfString>
+                      <ArrayOfString>
+                        <string>7873495,Detention,HWSD,,9/29/2022,9/29/2022,,7,98438</string>
+                      </ArrayOfString>
+                      <ArrayOfString>
+                        <string>7873496,Detention,BBHGT,GA6778JK96,9/30/2022,9/30/2022,10/7/2022,8,98439</string>
+                      </ArrayOfString>
+                      <ArrayOfString>
+                        <string>7873497,Detention,HJHGT,,,,,,98440</string>
+                      </ArrayOfString>
+                      <ArrayOfString>
+                        <string>7873498,Detention,,,,10/2/2022,10/9/2022,10,98441</string>
+                      </ArrayOfString>
+                      <ArrayOfString>
+                        <string>7873499,Detention,BBHGT,GA6778JK99,10/3/2022,10/3/2022,10/10/2022,11,98442</string>
+                      </ArrayOfString>
+                      <ArrayOfString>
+                        <string>7873500,Detention,,,,,,,98443</string>
+                      </ArrayOfString>
+                      <ArrayOfString>
+                        <string>7873501,Detention,HJHGT,GA6778JK101,10/5/2022,10/5/2022,10/12/2022,13,98444</string>
+                      </ArrayOfString>
+                    </GridData>
+                  </FilteredStaticDataGrid>
+                </ReadFileActivity>
+              </Children>
+              <Children type="WorkflowEditor.Activity.MessageBox.Model.MessageBoxActivity, WorkflowEditor.Activity.MessageBox, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+                <MessageBoxActivity Name="Message Box" ModelRevision="9">
+                  <NameToDisplay>Message Box</NameToDisplay>
+                  <ID>536d15c6-1c01-476c-9d0c-7b25f7f67ae6</ID>
+                  <IsEnabled>true</IsEnabled>
+                  <IsVirgin>false</IsVirgin>
+                  <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+                  <VariableMappings />
+                  <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+                  <Button>OK</Button>
+                  <Icon>No</Icon>
+                  <DefaultButton>First</DefaultButton>
+                  <Title>Number of Rows &amp; Columns</Title>
+                  <Text>Number of Rows: {$Activity_Parameters_nRowCounter},Number of Columns:{$Activity_Parameters_nColumnCounter}</Text>
+                  <Timeout>3</Timeout>
+                  <UseTimeout>true</UseTimeout>
+                  <Modality>System</Modality>
+                </MessageBoxActivity>
+              </Children>
+              <IsEnabled>true</IsEnabled>
+              <IsVirgin>false</IsVirgin>
+              <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+              <VariableMappings />
+              <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+            </BlockSectionActivity>
+          </Children>
+          <Children type="WorkflowEditor.Activity.Run.Model.RunActivity, WorkflowEditor.Activity.Run, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+            <RunActivity Name="Run Program" ModelRevision="9">
+              <NameToDisplay>Run Program (Run Program EXCEL.EXE)</NameToDisplay>
+              <ID>d3ca5c09-1aa6-485c-bca4-630fbe98ab82</ID>
+              <IsEnabled>true</IsEnabled>
+              <IsVirgin>false</IsVirgin>
+              <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+              <VariableMappings />
+              <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+              <UseGeneralTimeout>true</UseGeneralTimeout>
+              <Timeout>45</Timeout>
+              <FileName>C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE</FileName>
+              <CommandLineParameters>DefaultShipmentTracker.csv</CommandLineParameters>
+              <WorkingDirectory>C:\RPADemo\OSRA22\</WorkingDirectory>
+              <ShowWindowAs>Maximized</ShowWindowAs>
+              <RunIn3rdParty>false</RunIn3rdParty>
+              <WaitForWindowVisible>true</WaitForWindowVisible>
+              <WindowTitleToWaitFor>DefaultShipmentTracker.*</WindowTitleToWaitFor>
+              <UseRegEx>true</UseRegEx>
+              <UseCredentials>false</UseCredentials>
+              <InteractiveLogonWithProfile>false</InteractiveLogonWithProfile>
+              <InheritEnvironment>false</InheritEnvironment>
+              <CredentialUsername />
+              <CredentialPassword />
+              <CredentialDomain />
+            </RunActivity>
+          </Children>
+          <Children type="WorkflowEditor.Activity.Keystroke.Model.KeystrokeActivity, WorkflowEditor.Activity.Keystroke, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+            <KeystrokeActivity Name="Format &amp; Copy Data From CSV File" ModelRevision="9">
+              <NameToDisplay>Format &amp; Copy Data From CSV File (Keystrokes)</NameToDisplay>
+              <ID>e22cd84d-50a8-43f3-a5eb-873c5a514079</ID>
+              <IsEnabled>true</IsEnabled>
+              <IsVirgin>false</IsVirgin>
+              <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+              <VariableMappings />
+              <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+              <Pause>10</Pause>
+              <Keystrokes>
+                <Keystroke>
+                  <ID>1</ID>
+                  <Content>{DOWN}</Content>
+                  <WindowTitle>DefaultShipmentTracker - Excel</WindowTitle>
+                  <WindowText />
+                </Keystroke>
+                <Keystroke>
+                  <ID>2</ID>
+                  <Content>{CTRLDOWN}</Content>
+                  <WindowTitle>DefaultShipmentTracker - Excel</WindowTitle>
+                  <WindowText />
+                </Keystroke>
+                <Keystroke>
+                  <ID>3</ID>
+                  <Content>{SHIFTDOWN}</Content>
+                  <WindowTitle>DefaultShipmentTracker - Excel</WindowTitle>
+                  <WindowText />
+                </Keystroke>
+                <Keystroke>
+                  <ID>4</ID>
+                  <Content>{RIGHT}</Content>
+                  <WindowTitle>DefaultShipmentTracker - Excel</WindowTitle>
+                  <WindowText />
+                </Keystroke>
+                <Keystroke>
+                  <ID>5</ID>
+                  <Content>{DOWN}</Content>
+                  <WindowTitle>DefaultShipmentTracker - Excel</WindowTitle>
+                  <WindowText />
+                </Keystroke>
+                <Keystroke>
+                  <ID>6</ID>
+                  <Content>{CTRLUP}</Content>
+                  <WindowTitle>DefaultShipmentTracker - Excel</WindowTitle>
+                  <WindowText />
+                </Keystroke>
+                <Keystroke>
+                  <ID>7</ID>
+                  <Content>{SHIFTUP}</Content>
+                  <WindowTitle>DefaultShipmentTracker - Excel</WindowTitle>
+                  <WindowText />
+                </Keystroke>
+                <Keystroke>
+                  <ID>8</ID>
+                  <Content>{ALTDOWN}</Content>
+                  <WindowTitle>DefaultShipmentTracker - Excel</WindowTitle>
+                  <WindowText />
+                </Keystroke>
+                <Keystroke>
+                  <ID>9</ID>
+                  <Content>ho</Content>
+                  <WindowTitle>DefaultShipmentTracker - Excel</WindowTitle>
+                  <WindowText />
+                </Keystroke>
+                <Keystroke>
+                  <ID>10</ID>
+                  <Content>i</Content>
+                  <WindowTitle />
+                  <WindowText />
+                </Keystroke>
+                <Keystroke>
+                  <ID>11</ID>
+                  <Content>{ALTUP}</Content>
+                  <WindowTitle>DefaultShipmentTracker - Excel</WindowTitle>
+                  <WindowText />
+                </Keystroke>
+                <Keystroke>
+                  <ID>12</ID>
+                  <Content>{LEFT}</Content>
+                  <WindowTitle>DefaultShipmentTracker - Excel</WindowTitle>
+                  <WindowText />
+                </Keystroke>
+                <Keystroke>
+                  <ID>13</ID>
+                  <Content>{SHIFTDOWN}</Content>
+                  <WindowTitle>DefaultShipmentTracker - Excel</WindowTitle>
+                  <WindowText />
+                </Keystroke>
+                <Keystroke>
+                  <ID>14</ID>
+                  <Content>{RIGHT}</Content>
+                  <WindowTitle>DefaultShipmentTracker - Excel</WindowTitle>
+                  <WindowText />
+                </Keystroke>
+                <Keystroke>
+                  <ID>15</ID>
+                  <Content>{RIGHT}</Content>
+                  <WindowTitle>DefaultShipmentTracker - Excel</WindowTitle>
+                  <WindowText />
+                </Keystroke>
+                <Keystroke>
+                  <ID>16</ID>
+                  <Content>{RIGHT}</Content>
+                  <WindowTitle>DefaultShipmentTracker - Excel</WindowTitle>
+                  <WindowText />
+                </Keystroke>
+                <Keystroke>
+                  <ID>17</ID>
+                  <Content>{RIGHT}</Content>
+                  <WindowTitle>DefaultShipmentTracker - Excel</WindowTitle>
+                  <WindowText />
+                </Keystroke>
+                <Keystroke>
+                  <ID>18</ID>
+                  <Content>{RIGHT}</Content>
+                  <WindowTitle>DefaultShipmentTracker - Excel</WindowTitle>
+                  <WindowText />
+                </Keystroke>
+                <Keystroke>
+                  <ID>19</ID>
+                  <Content>{RIGHT}</Content>
+                  <WindowTitle>DefaultShipmentTracker - Excel</WindowTitle>
+                  <WindowText />
+                </Keystroke>
+                <Keystroke>
+                  <ID>20</ID>
+                  <Content>{RIGHT}</Content>
+                  <WindowTitle>DefaultShipmentTracker - Excel</WindowTitle>
+                  <WindowText />
+                </Keystroke>
+                <Keystroke>
+                  <ID>21</ID>
+                  <Content>{CTRLDOWN}</Content>
+                  <WindowTitle>DefaultShipmentTracker - Excel</WindowTitle>
+                  <WindowText />
+                </Keystroke>
+                <Keystroke>
+                  <ID>22</ID>
+                  <Content>{DOWN}</Content>
+                  <WindowTitle>DefaultShipmentTracker - Excel</WindowTitle>
+                  <WindowText />
+                </Keystroke>
+                <Keystroke>
+                  <ID>23</ID>
+                  <Content>{CTRLUP}</Content>
+                  <WindowTitle>DefaultShipmentTracker - Excel</WindowTitle>
+                  <WindowText />
+                </Keystroke>
+                <Keystroke>
+                  <ID>24</ID>
+                  <Content>{SHIFTUP}</Content>
+                  <WindowTitle>DefaultShipmentTracker - Excel</WindowTitle>
+                  <WindowText />
+                </Keystroke>
+                <Keystroke>
+                  <ID>25</ID>
+                  <Content>{CTRLDOWN}</Content>
+                  <WindowTitle>DefaultShipmentTracker - Excel</WindowTitle>
+                  <WindowText />
+                </Keystroke>
+                <Keystroke>
+                  <ID>26</ID>
+                  <Content>c</Content>
+                  <WindowTitle>DefaultShipmentTracker - Excel</WindowTitle>
+                  <WindowText />
+                </Keystroke>
+                <Keystroke>
+                  <ID>27</ID>
+                  <Content>{CTRLUP}</Content>
+                  <WindowTitle>DefaultShipmentTracker - Excel</WindowTitle>
+                  <WindowText />
+                </Keystroke>
+              </Keystrokes>
+              <KeyUpDelay>5</KeyUpDelay>
+              <KeyDownDelay>5</KeyDownDelay>
+              <UseWindowText>false</UseWindowText>
+              <UseRegEx>false</UseRegEx>
+              <UseCommonWindowTitle>false</UseCommonWindowTitle>
+              <CommonWindowTitle>DefaultShipmentTracker - Excel</CommonWindowTitle>
+            </KeystrokeActivity>
+          </Children>
+          <Children type="WorkflowEditor.Activity.WASession.Model.WASessionChromeActivity, WorkflowEditor.Activity.WASession, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+            <WASessionChromeActivity Name="Web Session (Chrome)" ModelRevision="9">
+              <NameToDisplay>Web Session (Chrome)</NameToDisplay>
+              <ID>440b49cc-c45d-4800-95e6-88519d947414</ID>
+              <Children type="WorkflowEditor.Activity.WindowWait.Model.WindowWaitActivity, WorkflowEditor.Activity.WindowWait, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+                <WindowWaitActivity Name="Window Wait" ModelRevision="9">
+                  <NameToDisplay>Window Wait (Window Wait for Appear 'Addendum Template - Google Sheets - ...)</NameToDisplay>
+                  <ID>c6319f82-1ebe-448c-9c25-aaad5c206f03</ID>
+                  <IsEnabled>true</IsEnabled>
+                  <IsVirgin>false</IsVirgin>
+                  <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+                  <VariableMappings />
+                  <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+                  <UseGeneralTimeout>true</UseGeneralTimeout>
+                  <Timeout>45</Timeout>
+                  <WindowTitle>Addendum Template - Google Sheets - Google Chrome</WindowTitle>
+                  <WindowText />
+                  <UseRegEx>false</UseRegEx>
+                  <UseWindowText>false</UseWindowText>
+                  <WaitDelay>50</WaitDelay>
+                  <CustomWaitDelay>true</CustomWaitDelay>
+                  <WaitFor>Appear</WaitFor>
+                </WindowWaitActivity>
+              </Children>
+              <Children type="WorkflowEditor.Activity.Keystroke.Model.KeystrokeActivity, WorkflowEditor.Activity.Keystroke, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+                <KeystrokeActivity Name="Paste Data into Google Sheets" ModelRevision="9">
+                  <NameToDisplay>Paste Data into Google Sheets (Keystrokes)</NameToDisplay>
+                  <ID>916c14c4-b74f-4dd3-a55f-e8dda387b2de</ID>
+                  <IsEnabled>true</IsEnabled>
+                  <IsVirgin>false</IsVirgin>
+                  <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+                  <VariableMappings />
+                  <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+                  <Pause>50</Pause>
+                  <Keystrokes>
+                    <Keystroke>
+                      <ID>5</ID>
+                      <Content>{ESCAPE}</Content>
+                      <WindowTitle>Default spreadsheet - Google Sheets - Google Chrome</WindowTitle>
+                      <WindowText />
+                    </Keystroke>
+                    <Keystroke>
+                      <ID>1</ID>
+                      <Content>{DOWN}</Content>
+                      <WindowTitle>Default spreadsheet - Google Sheets - Google Chrome</WindowTitle>
+                      <WindowText />
+                    </Keystroke>
+                    <Keystroke>
+                      <ID>2</ID>
+                      <Content>{CTRLDOWN}</Content>
+                      <WindowTitle>Default spreadsheet - Google Sheets - Google Chrome</WindowTitle>
+                      <WindowText />
+                    </Keystroke>
+                    <Keystroke>
+                      <ID>3</ID>
+                      <Content>v</Content>
+                      <WindowTitle>Default spreadsheet - Google Sheets - Google Chrome</WindowTitle>
+                      <WindowText />
+                    </Keystroke>
+                    <Keystroke>
+                      <ID>4</ID>
+                      <Content>{CTRLUP}</Content>
+                      <WindowTitle>Default spreadsheet - Google Sheets - Google Chrome</WindowTitle>
+                      <WindowText />
+                    </Keystroke>
+                  </Keystrokes>
+                  <KeyUpDelay>5</KeyUpDelay>
+                  <KeyDownDelay>5</KeyDownDelay>
+                  <UseWindowText>false</UseWindowText>
+                  <UseRegEx>false</UseRegEx>
+                  <UseCommonWindowTitle>true</UseCommonWindowTitle>
+                  <CommonWindowTitle>Addendum Template - Google Sheets - Google Chrome</CommonWindowTitle>
+                </KeystrokeActivity>
+              </Children>
+              <Children type="WorkflowEditor.Activity.Sleep.Model.SleepActivity, WorkflowEditor.Activity.Sleep, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+                <SleepActivity Name="Sleep" ModelRevision="9">
+                  <NameToDisplay>Sleep (Sleep 2000ms)</NameToDisplay>
+                  <ID>0f3c520b-02d6-495f-b3ca-ed201396bb29</ID>
+                  <Description />
+                  <IsEnabled>true</IsEnabled>
+                  <IsVirgin>false</IsVirgin>
+                  <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+                  <VariableMappings />
+                  <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+                  <SleepInterval>2000</SleepInterval>
+                </SleepActivity>
+              </Children>
+              <Children type="WorkflowEditor.Activity.Keystroke.Model.KeystrokeActivity, WorkflowEditor.Activity.Keystroke, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+                <KeystrokeActivity Name="Switch to Valid Shipment Sheets in Gsheets" ModelRevision="9">
+                  <NameToDisplay>Switch to Valid Shipment Sheets in Gsheets (Keystrokes)</NameToDisplay>
+                  <ID>d9669cf9-7f60-4a7a-a0ec-1d7192b7eeda</ID>
+                  <IsEnabled>true</IsEnabled>
+                  <IsVirgin>false</IsVirgin>
+                  <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+                  <VariableMappings />
+                  <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+                  <Pause>50</Pause>
+                  <Keystrokes>
+                    <Keystroke>
+                      <ID>1</ID>
+                      <Content>{CTRLDOWN}</Content>
+                      <WindowTitle>Addendum Template - Google Sheets - Google Chrome</WindowTitle>
+                      <WindowText />
+                    </Keystroke>
+                    <Keystroke>
+                      <ID>2</ID>
+                      <Content>{SHIFTDOWN}</Content>
+                      <WindowTitle>Addendum Template - Google Sheets - Google Chrome</WindowTitle>
+                      <WindowText />
+                    </Keystroke>
+                    <Keystroke>
+                      <ID>3</ID>
+                      <Content>{PGDN}</Content>
+                      <WindowTitle>Addendum Template - Google Sheets - Google Chrome</WindowTitle>
+                      <WindowText />
+                    </Keystroke>
+                    <Keystroke>
+                      <ID>4</ID>
+                      <Content>{SHIFTUP}</Content>
+                      <WindowTitle>Addendum Template - Google Sheets - Google Chrome</WindowTitle>
+                      <WindowText />
+                    </Keystroke>
+                    <Keystroke>
+                      <ID>5</ID>
+                      <Content>{CTRLUP}</Content>
+                      <WindowTitle>Addendum Template - Google Sheets - Google Chrome</WindowTitle>
+                      <WindowText />
+                    </Keystroke>
+                  </Keystrokes>
+                  <KeyUpDelay>5</KeyUpDelay>
+                  <KeyDownDelay>5</KeyDownDelay>
+                  <UseWindowText>false</UseWindowText>
+                  <UseRegEx>false</UseRegEx>
+                  <UseCommonWindowTitle>true</UseCommonWindowTitle>
+                  <CommonWindowTitle>Addendum Template - Google Sheets - Google Chrome</CommonWindowTitle>
+                </KeystrokeActivity>
+              </Children>
+              <IsEnabled>true</IsEnabled>
+              <IsVirgin>false</IsVirgin>
+              <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+              <VariableMappings>
+                <VariableMapping>
+                  <OwnerID>f0d096e6-126a-41a6-a813-390c0ecfbf49</OwnerID>
+                  <OwnerName>Activity Parameters</OwnerName>
+                  <SourceName>dfltWebSession</SourceName>
+                  <SourceType>WebSessionId</SourceType>
+                  <TargetType>WebSessionId</TargetType>
+                  <TargetName>WebSessionId</TargetName>
+                </VariableMapping>
+              </VariableMappings>
+              <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+              <WebSessionId />
+              <OpenBrowserWizard>true</OpenBrowserWizard>
+              <StartUpURL>https://docs.google.com/spreadsheets/d/1UHS-1ZuHzo-bxjIx2PS14tlJgdD0guHFb77lqWswE60/edit#gid=676051344</StartUpURL>
+              <StartMaximized>true</StartMaximized>
+              <BrowserMismatch>Warning</BrowserMismatch>
+              <KeepOutMouse>true</KeepOutMouse>
+              <RepeatMouseKeepOut>false</RepeatMouseKeepOut>
+              <HideCommandPrompt>true</HideCommandPrompt>
+              <MouseParkingPosition>TopRight</MouseParkingPosition>
+              <ScriptTimeout>5</ScriptTimeout>
+              <WebDriverTimeoutInSeconds>60</WebDriverTimeoutInSeconds>
+              <WebdriverStartRetries>0</WebdriverStartRetries>
+              <ExtraArguments>--user-data-dir=C:\Users\msps\AppData\Local\Google\Chrome\User Data</ExtraArguments>
+              <UserAgentString />
+              <EnableVerboseLogging>false</EnableVerboseLogging>
+              <DisableSupportForUnpackedExtensions>false</DisableSupportForUnpackedExtensions>
+            </WASessionChromeActivity>
+          </Children>
+          <Children type="WorkflowEditor.Activity.WindowSetState.Model.WindowSetStateActivity, WorkflowEditor.Activity.WindowSetState, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+            <WindowSetStateActivity Name="Window set State" ModelRevision="9">
+              <NameToDisplay>Window set State (Window Kill 'DefaultShipmentTracker - Excel')</NameToDisplay>
+              <ID>0f5f1a7c-83e5-48a4-b918-717b34a7a7fd</ID>
+              <IsEnabled>true</IsEnabled>
+              <IsVirgin>false</IsVirgin>
+              <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+              <VariableMappings />
+              <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+              <UseGeneralTimeout>false</UseGeneralTimeout>
+              <Timeout>0</Timeout>
+              <WindowTitle>DefaultShipmentTracker - Excel</WindowTitle>
+              <WindowText />
+              <UseRegEx>false</UseRegEx>
+              <UseWindowText>false</UseWindowText>
+              <WaitDelay>50</WaitDelay>
+              <CustomWaitDelay>true</CustomWaitDelay>
+              <SetStateFlag>Kill</SetStateFlag>
+            </WindowSetStateActivity>
+          </Children>
+          <IsEnabled>true</IsEnabled>
+          <IsVirgin>true</IsVirgin>
+          <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+          <VariableMappings />
+        </Transaction>
+      </Children>
+      <IsEnabled>true</IsEnabled>
+      <IsVirgin>true</IsVirgin>
+      <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+      <VariableMappings />
+      <RecordTimerSum>false</RecordTimerSum>
+      <Application>&lt;not defined&gt;</Application>
+      <BP>&lt;not defined&gt;</BP>
+      <Client>000</Client>
+      <Customer>&lt;not defined&gt;</Customer>
+      <Server>Server</Server>
+      <System>&lt;not defined&gt;</System>
+      <ErrorCycles>1</ErrorCycles>
+      <ReduceErrorCycleAtDesignTime>true</ReduceErrorCycleAtDesignTime>
+      <DelayBetweenRetries>60</DelayBetweenRetries>
+      <Timeout>45</Timeout>
+      <TestCustomer>n/a for RPA Workflows!</TestCustomer>
+      <TestSystem>n/a for RPA Workflows!</TestSystem>
+      <TestClient>n/a for RPA Workflows!</TestClient>
+      <TestApplication>n/a for RPA Workflows!</TestApplication>
+      <TestLocation>n/a for RPA Workflows!</TestLocation>
+      <TestStation>n/a for RPA Workflows!</TestStation>
+      <AvailableVariableSources />
+    </ActivityWorkflowMeasurement>
+  </Children>
+  <Children type="WorkflowEditor.ControlBlocks.WorkflowFinalization.Model.WorkflowFinalizationActivity, WorkflowEditor.ControlBlocks, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+    <WorkflowFinalizationActivity Name="Workflow Finalization" ModelRevision="9">
+      <NameToDisplay>Workflow Finalization</NameToDisplay>
+      <ID>5416edff-83de-41f5-ae14-05ccea2feda0</ID>
+      <Children type="WorkflowEditor.ControlBlocks.WorkflowFinalization.Model.OnSuccessSection, WorkflowEditor.ControlBlocks, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+        <OnSuccessSection Name="Workflow run succeeded" ModelRevision="9">
+          <NameToDisplay>Workflow run succeeded</NameToDisplay>
+          <ID>c6cb2c2d-c298-40ca-a94d-565ec21b1a85</ID>
+          <Children type="WorkflowEditor.Workflow.Structure.ProjectItems.DummyItem, WorkflowEditor.Workflow.Structure, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+            <DummyItem Name="Insert Item here..." ModelRevision="9">
+              <NameToDisplay>Insert Item here...</NameToDisplay>
+              <ID>eff837e2-785f-40e3-b907-1399e90c7076</ID>
+              <IsEnabled>true</IsEnabled>
+              <IsVirgin>true</IsVirgin>
+              <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+              <VariableMappings />
+              <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+            </DummyItem>
+          </Children>
+          <IsEnabled>true</IsEnabled>
+          <IsVirgin>true</IsVirgin>
+          <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+          <VariableMappings />
+        </OnSuccessSection>
+      </Children>
+      <Children type="WorkflowEditor.ControlBlocks.WorkflowFinalization.Model.OnErrorSection, WorkflowEditor.ControlBlocks, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+        <OnErrorSection Name="Workflow run failed" ModelRevision="9">
+          <NameToDisplay>Workflow run failed</NameToDisplay>
+          <ID>67a97a13-d7fc-4410-a666-879ed6561e9f</ID>
+          <Children type="WorkflowEditor.Workflow.Structure.ProjectItems.DummyItem, WorkflowEditor.Workflow.Structure, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+            <DummyItem Name="Insert Item here..." ModelRevision="9">
+              <NameToDisplay>Insert Item here...</NameToDisplay>
+              <ID>0e429cfe-5bca-4986-9b42-784d73acaacf</ID>
+              <IsEnabled>true</IsEnabled>
+              <IsVirgin>true</IsVirgin>
+              <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+              <VariableMappings />
+              <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+            </DummyItem>
+          </Children>
+          <IsEnabled>true</IsEnabled>
+          <IsVirgin>true</IsVirgin>
+          <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+          <VariableMappings />
+        </OnErrorSection>
+      </Children>
+      <Children type="WorkflowEditor.ControlBlocks.WorkflowFinalization.Model.DoAlwaysSection, WorkflowEditor.ControlBlocks, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+        <DoAlwaysSection Name="Common finalization handling" ModelRevision="9">
+          <NameToDisplay>Common finalization handling</NameToDisplay>
+          <ID>ae89ed9f-4298-4562-b4d0-fcda8e3dcf3e</ID>
+          <Children type="WorkflowEditor.Workflow.Structure.ProjectItems.DummyItem, WorkflowEditor.Workflow.Structure, Version=6.0.15086.1, Culture=neutral, PublicKeyToken=null">
+            <DummyItem Name="Insert Item here..." ModelRevision="9">
+              <NameToDisplay>Insert Item here...</NameToDisplay>
+              <ID>d2059c6c-1894-4ed8-9670-4aad3fa42d5c</ID>
+              <IsEnabled>true</IsEnabled>
+              <IsVirgin>true</IsVirgin>
+              <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+              <VariableMappings />
+              <ActivityErrorHandling>EhNormal</ActivityErrorHandling>
+            </DummyItem>
+          </Children>
+          <IsEnabled>true</IsEnabled>
+          <IsVirgin>true</IsVirgin>
+          <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+          <VariableMappings />
+        </DoAlwaysSection>
+      </Children>
+      <IsEnabled>true</IsEnabled>
+      <IsVirgin>true</IsVirgin>
+      <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+      <VariableMappings />
+      <PreserveFailedActionStepName>true</PreserveFailedActionStepName>
+      <SuccessState>KeepSuccessState</SuccessState>
+      <ErrorState>KeepErrorState</ErrorState>
+    </WorkflowFinalizationActivity>
+  </Children>
+  <IsEnabled>true</IsEnabled>
+  <IsVirgin>true</IsVirgin>
+  <IsActiveDbgBreakpoint>false</IsActiveDbgBreakpoint>
+  <VariableMappings />
+  <ExternalScriptsIncludes>
+    <Includes />
+  </ExternalScriptsIncludes>
+  <ShowWarnOnMeasurementDeletion>true</ShowWarnOnMeasurementDeletion>
+  <LastImageID>0</LastImageID>
+  <Author>msps</Author>
+  <CreationDate>2022-11-01T18:07:32.6154013+08:00</CreationDate>
+  <LastEditor>cassie.yang@flexport.com</LastEditor>
+  <LastModifyDate>2022-11-01T18:08:03.4316764+08:00</LastModifyDate>
+  <Reboot>false</Reboot>
+  <RebootTimeString>23:50:00</RebootTimeString>
+  <SchedulingMode>RunOnce</SchedulingMode>
+  <StartTime>0</StartTime>
+  <Interval>10</Interval>
+  <Pause>300</Pause>
+  <Phone>0123-456789</Phone>
+  <Mail>servicetrace@example.com</Mail>
+  <PauseText />
+  <Enter>1</Enter>
+  <RepositoryVersion>0</RepositoryVersion>
+  <HasLocalChanges>true</HasLocalChanges>
+  <FallbackColorDepth>Bpp_Auto</FallbackColorDepth>
+  <CompatV21_NoStatLocBlankTrimming>false</CompatV21_NoStatLocBlankTrimming>
+  <UseLegacyXmlDatafile>false</UseLegacyXmlDatafile>
+  <UseStaticPatternAnalysisImage>false</UseStaticPatternAnalysisImage>
+  <DisableKeyboardStateReset>false</DisableKeyboardStateReset>
+  <StcGuardOperationMode>true</StcGuardOperationMode>
+  <StcGuardProcessesKilledByGuard />
+  <StcGuardProcessesKillOnExit />
+  <StcGuardProcessKeepAlive />
+  <UseStaticActionStepNamePrefix>false</UseStaticActionStepNamePrefix>
+  <Location>&lt;not defined&gt;</Location>
+  <StationName>&lt;not defined&gt;</StationName>
+  <SaveServerMeasurementPoints />
+  <AllVariableSources />
+  <ExternalMeasurementPoints />
+  <masterData>
+    <CustomerGuid xsi:nil="true" />
+  </masterData>
+</WorkflowEditorProject>

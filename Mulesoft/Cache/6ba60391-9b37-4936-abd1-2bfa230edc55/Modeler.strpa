@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:servicetrace="http://servicetrace.de/bpmn2/extension" xmlns:bioc="http://bpmn.io/schema/bpmn/biocolor/1.0" xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color/1.0" id="Definitions_0b1qr8r" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:process id="Process_6ba603919b374936abd12bfa230edc55" name="Batch Document Uploader" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_7xCadtmtxh">
+      <bpmn:outgoing>SequenceFlow_1mhml87</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:sequenceFlow id="SequenceFlow_1mhml87" sourceRef="StartEvent_7xCadtmtxh" targetRef="ServiceTask_4MEvgqc41O" />
+    <bpmn:serviceTask id="ServiceTask_4MEvgqc41O" name="Access Looker" servicetrace:workflowId="4c4d49ac-d76a-47f4-b191-724a7e35662c" servicetrace:workflowRevisionId="4338aeff-e98a-4033-ab38-7e10ff63314f" servicetrace:referenceType="local" camunda:class="de.servicetrace.rpa.camunda.servicetask.AsynchronousServiceTask">
+      <bpmn:incoming>SequenceFlow_1mhml87</bpmn:incoming>
+      <bpmn:outgoing>Flow_0pbwx0z</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:exclusiveGateway id="Gateway_11glx8u">
+      <bpmn:incoming>Flow_14cm1di</bpmn:incoming>
+      <bpmn:outgoing>Flow_0uz1fp6</bpmn:outgoing>
+      <bpmn:outgoing>Flow_190zeli</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:sequenceFlow id="Flow_0pbwx0z" sourceRef="ServiceTask_4MEvgqc41O" targetRef="Activity_01hmwvn" />
+    <bpmn:serviceTask id="Activity_1kurozq" name="Send Error Notifiacation" servicetrace:workflowId="4d5559e9-fff7-4bcd-a90b-ad1ccf6099e9" servicetrace:workflowRevisionId="0403886d-6b21-4ec5-8dd8-5600ae0a0d78" servicetrace:referenceType="local" camunda:class="de.servicetrace.rpa.camunda.servicetask.AsynchronousServiceTask">
+      <bpmn:incoming>Flow_190zeli</bpmn:incoming>
+      <bpmn:outgoing>Flow_1xjhegz</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="Activity_007ww5s" name="Read Excel File" servicetrace:workflowId="466db0bd-88ea-4cef-be70-7a19cb9ad934" servicetrace:workflowRevisionId="79998d4a-0247-4c8a-9b54-e145dd0c7094" servicetrace:referenceType="local" camunda:class="de.servicetrace.rpa.camunda.servicetask.AsynchronousServiceTask">
+      <bpmn:incoming>Flow_0uz1fp6</bpmn:incoming>
+      <bpmn:outgoing>Flow_01bvxqw</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="Activity_1475pkt" name="Send Error Notifiaction" servicetrace:workflowId="7a7f0f36-7b06-4829-9540-6bcdfeee5ff6" servicetrace:workflowRevisionId="73145f0f-1882-41c6-bdef-2434c6bb3a3c" servicetrace:referenceType="local" camunda:class="de.servicetrace.rpa.camunda.servicetask.AsynchronousServiceTask">
+      <bpmn:incoming>Flow_1f5ao1r</bpmn:incoming>
+      <bpmn:outgoing>Flow_0wygjoy</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:endEvent id="Event_1e6sw0q">
+      <bpmn:incoming>Flow_1xjhegz</bpmn:incoming>
+      <bpmn:incoming>Flow_0d7dr4y</bpmn:incoming>
+      <bpmn:incoming>Flow_19rb52e</bpmn:incoming>
+      <bpmn:incoming>Flow_1frs5ff</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:serviceTask id="Activity_1yr4b1w" name="Clear Excel Files" servicetrace:workflowId="6b160961-b1c0-4874-a8dc-5c8749b78207" servicetrace:workflowRevisionId="95590195-1e31-41a1-aa5e-8d5c95b7b4fa" servicetrace:referenceType="local" camunda:class="de.servicetrace.rpa.camunda.servicetask.AsynchronousServiceTask">
+      <bpmn:incoming>Flow_0wygjoy</bpmn:incoming>
+      <bpmn:outgoing>Flow_0d7dr4y</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_0wygjoy" sourceRef="Activity_1475pkt" targetRef="Activity_1yr4b1w" />
+    <bpmn:sequenceFlow id="Flow_1xjhegz" sourceRef="Activity_1kurozq" targetRef="Event_1e6sw0q" />
+    <bpmn:sequenceFlow id="Flow_0d7dr4y" sourceRef="Activity_1yr4b1w" targetRef="Event_1e6sw0q" />
+    <bpmn:serviceTask id="Activity_191i0a0" name="Upload Document" servicetrace:workflowId="d6d5cd67-e0d2-422d-a95a-1b49705cb3b2" servicetrace:workflowRevisionId="b6571fa8-ed63-4b3f-85c3-7c12411a1505" servicetrace:referenceType="local" camunda:class="de.servicetrace.rpa.camunda.servicetask.AsynchronousServiceTask">
+      <bpmn:incoming>Flow_1xigrum</bpmn:incoming>
+      <bpmn:outgoing>Flow_1nwz206</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="Activity_0264jpp" name="Clear Excel FIles" servicetrace:workflowId="27124c57-7e1d-488c-af20-9147961c433c" servicetrace:workflowRevisionId="a9cc7b61-dc4a-49a8-a5c0-6ae7a5f49fe3" servicetrace:referenceType="local" camunda:class="de.servicetrace.rpa.camunda.servicetask.AsynchronousServiceTask">
+      <bpmn:incoming>Flow_14nggmm</bpmn:incoming>
+      <bpmn:outgoing>Flow_19rb52e</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_19rb52e" sourceRef="Activity_0264jpp" targetRef="Event_1e6sw0q" />
+    <bpmn:sequenceFlow id="Flow_0uz1fp6" name="True" sourceRef="Gateway_11glx8u" targetRef="Activity_007ww5s">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${(candownloadfile==true)}</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_190zeli" name="False" sourceRef="Gateway_11glx8u" targetRef="Activity_1kurozq">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${(candownloadfile==false)}</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:exclusiveGateway id="Gateway_0ngt7nj">
+      <bpmn:incoming>Flow_01bvxqw</bpmn:incoming>
+      <bpmn:outgoing>Flow_1vjvfaf</bpmn:outgoing>
+      <bpmn:outgoing>Flow_1xigrum</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:sequenceFlow id="Flow_01bvxqw" sourceRef="Activity_007ww5s" targetRef="Gateway_0ngt7nj" />
+    <bpmn:serviceTask id="Activity_1htagrq" name="Send Error Notification" servicetrace:workflowId="99ce9a19-c498-42fc-a704-523ef8dce7a8" servicetrace:workflowRevisionId="8037d69a-eadc-461b-a39b-8acafee2ac7c" servicetrace:referenceType="local" camunda:class="de.servicetrace.rpa.camunda.servicetask.AsynchronousServiceTask">
+      <bpmn:incoming>Flow_1vjvfaf</bpmn:incoming>
+      <bpmn:outgoing>Flow_1frs5ff</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_1vjvfaf" name="False" sourceRef="Gateway_0ngt7nj" targetRef="Activity_1htagrq">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${(canlogin==false)}</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_1frs5ff" sourceRef="Activity_1htagrq" targetRef="Event_1e6sw0q" />
+    <bpmn:sequenceFlow id="Flow_1xigrum" name="True" sourceRef="Gateway_0ngt7nj" targetRef="Activity_191i0a0">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${(canlogin==true)}</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:serviceTask id="Activity_01hmwvn" name="Test" servicetrace:workflowId="a5398f72-42f3-424b-958f-3488ca62081e" servicetrace:workflowRevisionId="4d5ab933-ae8c-4777-befd-0deaf2a48923" servicetrace:referenceType="local" camunda:class="de.servicetrace.rpa.camunda.servicetask.AsynchronousServiceTask">
+      <bpmn:incoming>Flow_0pbwx0z</bpmn:incoming>
+      <bpmn:outgoing>Flow_14cm1di</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_14cm1di" sourceRef="Activity_01hmwvn" targetRef="Gateway_11glx8u" />
+    <bpmn:exclusiveGateway id="Gateway_0s6jl3p">
+      <bpmn:incoming>Flow_1nwz206</bpmn:incoming>
+      <bpmn:outgoing>Flow_14nggmm</bpmn:outgoing>
+      <bpmn:outgoing>Flow_1f5ao1r</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:sequenceFlow id="Flow_14nggmm" name="SequenceFlow_1" sourceRef="Gateway_0s6jl3p" targetRef="Activity_0264jpp">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${(canuploaddoc==true)}</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_1f5ao1r" name="SequenceFlow_2" sourceRef="Gateway_0s6jl3p" targetRef="Activity_1475pkt">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${(canuploaddoc==false)}</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_1nwz206" sourceRef="Activity_191i0a0" targetRef="Gateway_0s6jl3p" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_6ba603919b374936abd12bfa230edc55">
+      <bpmndi:BPMNEdge id="Flow_1xigrum_di" bpmnElement="Flow_1xigrum">
+        <di:waypoint x="1155" y="120" />
+        <di:waypoint x="1240" y="120" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1187" y="102" width="22" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1frs5ff_di" bpmnElement="Flow_1frs5ff">
+        <di:waypoint x="1350" y="350" />
+        <di:waypoint x="1870" y="350" />
+        <di:waypoint x="1870" y="308" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1vjvfaf_di" bpmnElement="Flow_1vjvfaf">
+        <di:waypoint x="1130" y="145" />
+        <di:waypoint x="1130" y="350" />
+        <di:waypoint x="1250" y="350" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1132" y="260" width="27" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_01bvxqw_di" bpmnElement="Flow_01bvxqw">
+        <di:waypoint x="990" y="120" />
+        <di:waypoint x="1105" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_190zeli_di" bpmnElement="Flow_190zeli">
+        <di:waypoint x="610" y="145" />
+        <di:waypoint x="610" y="420" />
+        <di:waypoint x="960" y="420" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="802" y="297" width="27" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0uz1fp6_di" bpmnElement="Flow_0uz1fp6">
+        <di:waypoint x="635" y="120" />
+        <di:waypoint x="890" y="120" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="847" y="102" width="22" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_19rb52e_di" bpmnElement="Flow_19rb52e">
+        <di:waypoint x="1760" y="120" />
+        <di:waypoint x="1870" y="120" />
+        <di:waypoint x="1870" y="272" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0d7dr4y_di" bpmnElement="Flow_0d7dr4y">
+        <di:waypoint x="1760" y="290" />
+        <di:waypoint x="1852" y="290" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1xjhegz_di" bpmnElement="Flow_1xjhegz">
+        <di:waypoint x="1060" y="420" />
+        <di:waypoint x="1870" y="420" />
+        <di:waypoint x="1870" y="308" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0wygjoy_di" bpmnElement="Flow_0wygjoy">
+        <di:waypoint x="1550" y="290" />
+        <di:waypoint x="1660" y="290" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0pbwx0z_di" bpmnElement="Flow_0pbwx0z">
+        <di:waypoint x="210" y="80" />
+        <di:waypoint x="210" y="50" />
+        <di:waypoint x="390" y="50" />
+        <di:waypoint x="390" y="80" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_1mhml87_di" bpmnElement="SequenceFlow_1mhml87">
+        <di:waypoint x="58" y="120" />
+        <di:waypoint x="160" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_14cm1di_di" bpmnElement="Flow_14cm1di">
+        <di:waypoint x="440" y="120" />
+        <di:waypoint x="585" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_14nggmm_di" bpmnElement="Flow_14nggmm">
+        <di:waypoint x="1515" y="120" />
+        <di:waypoint x="1660" y="120" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1545" y="102" width="86" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1f5ao1r_di" bpmnElement="Flow_1f5ao1r">
+        <di:waypoint x="1490" y="145" />
+        <di:waypoint x="1490" y="198" />
+        <di:waypoint x="1500" y="198" />
+        <di:waypoint x="1500" y="250" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1452" y="180" width="86" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1nwz206_di" bpmnElement="Flow_1nwz206">
+        <di:waypoint x="1340" y="120" />
+        <di:waypoint x="1465" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="TRIGGER" bpmnElement="StartEvent_7xCadtmtxh">
+        <dc:Bounds x="22" y="102" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TASK" bpmnElement="ServiceTask_4MEvgqc41O" bioc:stroke="#1e88e5" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#1e88e5">
+        <dc:Bounds x="160" y="80" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_11glx8u_di" bpmnElement="Gateway_11glx8u" isMarkerVisible="true">
+        <dc:Bounds x="585" y="95" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_007ww5s_di" bpmnElement="Activity_007ww5s" bioc:stroke="#1e88e5" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#1e88e5">
+        <dc:Bounds x="890" y="80" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1475pkt_di" bpmnElement="Activity_1475pkt" bioc:stroke="#1e88e5" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#1e88e5">
+        <dc:Bounds x="1450" y="250" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1e6sw0q_di" bpmnElement="Event_1e6sw0q">
+        <dc:Bounds x="1852" y="272" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1yr4b1w_di" bpmnElement="Activity_1yr4b1w" bioc:stroke="#1e88e5" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#1e88e5">
+        <dc:Bounds x="1660" y="250" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_191i0a0_di" bpmnElement="Activity_191i0a0" bioc:stroke="#1e88e5" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#1e88e5">
+        <dc:Bounds x="1240" y="80" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0264jpp_di" bpmnElement="Activity_0264jpp" bioc:stroke="#1e88e5" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#1e88e5">
+        <dc:Bounds x="1660" y="80" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_0ngt7nj_di" bpmnElement="Gateway_0ngt7nj" isMarkerVisible="true">
+        <dc:Bounds x="1105" y="95" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_0s6jl3p_di" bpmnElement="Gateway_0s6jl3p" isMarkerVisible="true">
+        <dc:Bounds x="1465" y="95" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1kurozq_di" bpmnElement="Activity_1kurozq" bioc:stroke="#1e88e5" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#1e88e5">
+        <dc:Bounds x="960" y="380" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1htagrq_di" bpmnElement="Activity_1htagrq" bioc:stroke="#1e88e5" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#1e88e5">
+        <dc:Bounds x="1250" y="310" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_01hmwvn_di" bpmnElement="Activity_01hmwvn" bioc:stroke="#1e88e5" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#1e88e5">
+        <dc:Bounds x="340" y="80" width="100" height="80" />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

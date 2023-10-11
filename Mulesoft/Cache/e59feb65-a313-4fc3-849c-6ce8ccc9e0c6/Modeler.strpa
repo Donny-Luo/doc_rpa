@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:servicetrace="http://servicetrace.de/bpmn2/extension" xmlns:bioc="http://bpmn.io/schema/bpmn/biocolor/1.0" xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color/1.0" id="Definitions_0b1qr8r" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:process id="Process_e59feb65a3134fc3849c6ce8ccc9e0c6" name="OSRA-22 case" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_EdCgqWjsNG">
+      <bpmn:outgoing>SequenceFlow_1mhml87</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:sequenceFlow id="SequenceFlow_1mhml87" sourceRef="StartEvent_EdCgqWjsNG" targetRef="ServiceTask_RGVa5HfRLk" />
+    <bpmn:serviceTask id="ServiceTask_RGVa5HfRLk" name="Download csv From Looker" servicetrace:workflowId="03e5bb85-4fe6-4682-8e48-45af04a028d5" servicetrace:workflowRevisionId="" servicetrace:referenceType="local" camunda:class="de.servicetrace.rpa.camunda.servicetask.AsynchronousServiceTask">
+      <bpmn:incoming>SequenceFlow_1mhml87</bpmn:incoming>
+      <bpmn:outgoing>Flow_0qthbqe</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:exclusiveGateway id="Gateway_02zrp0y" name="Is Download Successful?" default="Flow_040fgdr">
+      <bpmn:incoming>Flow_0qthbqe</bpmn:incoming>
+      <bpmn:outgoing>Flow_0hibt5o</bpmn:outgoing>
+      <bpmn:outgoing>Flow_040fgdr</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:sequenceFlow id="Flow_0qthbqe" sourceRef="ServiceTask_RGVa5HfRLk" targetRef="Gateway_02zrp0y" />
+    <bpmn:serviceTask id="ServiceTask_ra3EguN1JH" name="Import data into Online Template" servicetrace:workflowId="addae6d9-9c01-42e3-b3b4-a73740129007" servicetrace:workflowRevisionId="" servicetrace:referenceType="local" camunda:class="de.servicetrace.rpa.camunda.servicetask.AsynchronousServiceTask">
+      <bpmn:incoming>Flow_0hibt5o</bpmn:incoming>
+      <bpmn:outgoing>Flow_0f38edw</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_0hibt5o" name="Yes" sourceRef="Gateway_02zrp0y" targetRef="ServiceTask_ra3EguN1JH">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${(bDownldSuccessful==true)}</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:serviceTask id="ServiceTask_hO6MgHKban" name="Export Valid Shipment data into Excel" servicetrace:workflowId="50d0ce62-c743-4de3-9cf2-96542d79a48f" servicetrace:workflowRevisionId="" servicetrace:referenceType="local" camunda:class="de.servicetrace.rpa.camunda.servicetask.AsynchronousServiceTask">
+      <bpmn:incoming>Flow_0f38edw</bpmn:incoming>
+      <bpmn:outgoing>Flow_0ufb55j</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_0f38edw" sourceRef="ServiceTask_ra3EguN1JH" targetRef="ServiceTask_hO6MgHKban" />
+    <bpmn:serviceTask id="ServiceTask_2CTPOwfeeT" name="Get Unique ID and export to template" servicetrace:workflowId="5eb8391e-4adb-4b7d-9eea-2b7a6e00026d" servicetrace:workflowRevisionId="" servicetrace:referenceType="local" camunda:class="de.servicetrace.rpa.camunda.servicetask.AsynchronousServiceTask">
+      <bpmn:incoming>Flow_0ufb55j</bpmn:incoming>
+      <bpmn:outgoing>Flow_1qasiya</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_0ufb55j" sourceRef="ServiceTask_hO6MgHKban" targetRef="ServiceTask_2CTPOwfeeT" />
+    <bpmn:serviceTask id="ServiceTask_XzTawNw5bG" name="Save Template as PDF" servicetrace:workflowId="70d39501-dd9d-4d99-be87-33ae5254676b" servicetrace:workflowRevisionId="" servicetrace:referenceType="local" camunda:class="de.servicetrace.rpa.camunda.servicetask.AsynchronousServiceTask">
+      <bpmn:incoming>Flow_1qasiya</bpmn:incoming>
+      <bpmn:outgoing>Flow_10iw6zb</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_1qasiya" sourceRef="ServiceTask_2CTPOwfeeT" targetRef="ServiceTask_XzTawNw5bG" />
+    <bpmn:serviceTask id="ServiceTask_lGsTdcJl3z" name="Login to shipment page and upload corresponding PDF" servicetrace:workflowId="5bc3f8b2-41e1-487e-9485-bcfeb117f58e" servicetrace:workflowRevisionId="" servicetrace:referenceType="local" camunda:class="de.servicetrace.rpa.camunda.servicetask.AsynchronousServiceTask">
+      <bpmn:incoming>Flow_10iw6zb</bpmn:incoming>
+      <bpmn:outgoing>Flow_15uct6r</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_10iw6zb" sourceRef="ServiceTask_XzTawNw5bG" targetRef="ServiceTask_lGsTdcJl3z" />
+    <bpmn:serviceTask id="ServiceTask_6dRzsYrp0V" name="Pull out data in Excel file &amp; Append to record sheet" servicetrace:workflowId="40e239c1-0044-4e11-8c21-c80939aadaac" servicetrace:workflowRevisionId="" servicetrace:referenceType="local" camunda:class="de.servicetrace.rpa.camunda.servicetask.AsynchronousServiceTask">
+      <bpmn:incoming>Flow_15uct6r</bpmn:incoming>
+      <bpmn:outgoing>Flow_02cl14x</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_15uct6r" sourceRef="ServiceTask_lGsTdcJl3z" targetRef="ServiceTask_6dRzsYrp0V" />
+    <bpmn:serviceTask id="ServiceTask_oIX0TS56rE" name="Clear all data in online template,Excel file &amp; Template" servicetrace:workflowId="d5fbf030-a122-4f41-9c7e-cc2757a1cdb2" servicetrace:workflowRevisionId="" servicetrace:referenceType="local" camunda:class="de.servicetrace.rpa.camunda.servicetask.AsynchronousServiceTask">
+      <bpmn:incoming>Flow_02cl14x</bpmn:incoming>
+      <bpmn:outgoing>Flow_0v492z8</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_02cl14x" sourceRef="ServiceTask_6dRzsYrp0V" targetRef="ServiceTask_oIX0TS56rE" />
+    <bpmn:serviceTask id="ServiceTask_mO9FdwkaML" name="Clean up Environment" servicetrace:workflowId="da249c5f-fbef-47a8-9234-18be67bd782c" servicetrace:workflowRevisionId="" servicetrace:referenceType="local" camunda:class="de.servicetrace.rpa.camunda.servicetask.AsynchronousServiceTask">
+      <bpmn:incoming>Flow_0v492z8</bpmn:incoming>
+      <bpmn:incoming>Flow_040fgdr</bpmn:incoming>
+      <bpmn:outgoing>Flow_1jacusv</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_0v492z8" sourceRef="ServiceTask_oIX0TS56rE" targetRef="ServiceTask_mO9FdwkaML" />
+    <bpmn:endEvent id="Event_1i7u13q">
+      <bpmn:incoming>Flow_1jacusv</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_1jacusv" sourceRef="ServiceTask_mO9FdwkaML" targetRef="Event_1i7u13q" />
+    <bpmn:sequenceFlow id="Flow_040fgdr" name="No" sourceRef="Gateway_02zrp0y" targetRef="ServiceTask_mO9FdwkaML" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_e59feb65a3134fc3849c6ce8ccc9e0c6">
+      <bpmndi:BPMNEdge id="Flow_040fgdr_di" bpmnElement="Flow_040fgdr">
+        <di:waypoint x="440" y="145" />
+        <di:waypoint x="440" y="250" />
+        <di:waypoint x="1770" y="250" />
+        <di:waypoint x="1770" y="160" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="483" y="232" width="13" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1jacusv_di" bpmnElement="Flow_1jacusv">
+        <di:waypoint x="1820" y="120" />
+        <di:waypoint x="1892" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0v492z8_di" bpmnElement="Flow_0v492z8">
+        <di:waypoint x="1650" y="120" />
+        <di:waypoint x="1720" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_02cl14x_di" bpmnElement="Flow_02cl14x">
+        <di:waypoint x="1480" y="120" />
+        <di:waypoint x="1550" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_15uct6r_di" bpmnElement="Flow_15uct6r">
+        <di:waypoint x="1310" y="120" />
+        <di:waypoint x="1380" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_10iw6zb_di" bpmnElement="Flow_10iw6zb">
+        <di:waypoint x="1143" y="120" />
+        <di:waypoint x="1210" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1qasiya_di" bpmnElement="Flow_1qasiya">
+        <di:waypoint x="970" y="120" />
+        <di:waypoint x="1043" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0ufb55j_di" bpmnElement="Flow_0ufb55j">
+        <di:waypoint x="800" y="120" />
+        <di:waypoint x="870" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0f38edw_di" bpmnElement="Flow_0f38edw">
+        <di:waypoint x="630" y="120" />
+        <di:waypoint x="700" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0hibt5o_di" bpmnElement="Flow_0hibt5o">
+        <di:waypoint x="465" y="120" />
+        <di:waypoint x="530" y="120" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="480" y="102" width="19" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0qthbqe_di" bpmnElement="Flow_0qthbqe">
+        <di:waypoint x="359" y="120" />
+        <di:waypoint x="415" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_1mhml87_di" bpmnElement="SequenceFlow_1mhml87">
+        <di:waypoint x="209" y="120" />
+        <di:waypoint x="259" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="TRIGGER" bpmnElement="StartEvent_EdCgqWjsNG">
+        <dc:Bounds x="173" y="102" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TASK" bpmnElement="ServiceTask_RGVa5HfRLk" bioc:stroke="#1e88e5" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#1e88e5">
+        <dc:Bounds x="259" y="80" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_02zrp0y_di" bpmnElement="Gateway_02zrp0y" isMarkerVisible="true" bioc:stroke="#e53935" bioc:fill="#ffcdd2" color:background-color="#ffcdd2" color:border-color="#e53935">
+        <dc:Bounds x="415" y="95" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="409" y="66" width="61" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_ra3EguN1JH_di" bpmnElement="ServiceTask_ra3EguN1JH" bioc:stroke="#1e88e5" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#1e88e5">
+        <dc:Bounds x="530" y="80" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_hO6MgHKban_di" bpmnElement="ServiceTask_hO6MgHKban" bioc:stroke="#43a047" bioc:fill="#c8e6c9" color:background-color="#c8e6c9" color:border-color="#43a047">
+        <dc:Bounds x="700" y="80" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_2CTPOwfeeT_di" bpmnElement="ServiceTask_2CTPOwfeeT" bioc:stroke="#43a047" bioc:fill="#c8e6c9" color:background-color="#c8e6c9" color:border-color="#43a047">
+        <dc:Bounds x="870" y="80" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_XzTawNw5bG_di" bpmnElement="ServiceTask_XzTawNw5bG" bioc:stroke="#fb8c00" bioc:fill="#ffe0b2" color:background-color="#ffe0b2" color:border-color="#fb8c00">
+        <dc:Bounds x="1043" y="80" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_lGsTdcJl3z_di" bpmnElement="ServiceTask_lGsTdcJl3z" bioc:stroke="#fb8c00" bioc:fill="#ffe0b2" color:background-color="#ffe0b2" color:border-color="#fb8c00">
+        <dc:Bounds x="1210" y="80" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_6dRzsYrp0V_di" bpmnElement="ServiceTask_6dRzsYrp0V" bioc:stroke="#43a047" bioc:fill="#c8e6c9" color:background-color="#c8e6c9" color:border-color="#43a047">
+        <dc:Bounds x="1380" y="80" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_oIX0TS56rE_di" bpmnElement="ServiceTask_oIX0TS56rE" bioc:stroke="#43a047" bioc:fill="#c8e6c9" color:background-color="#c8e6c9" color:border-color="#43a047">
+        <dc:Bounds x="1550" y="80" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_mO9FdwkaML_di" bpmnElement="ServiceTask_mO9FdwkaML" bioc:stroke="#1e88e5" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#1e88e5">
+        <dc:Bounds x="1720" y="80" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1i7u13q_di" bpmnElement="Event_1i7u13q">
+        <dc:Bounds x="1892" y="102" width="36" height="36" />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

@@ -1,0 +1,16 @@
+This is a temporary file for debug purposes only
+List of workflows used in Business Process 'OSRA-22 case' (e59feb65-a313-4fc3-849c-6ce8ccc9e0c6), as of: 11/1/2022 6:08:17 PM
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Activity Name                            | [Element id in BPMN]      | [Workflow ID]                         | [Workflow Revision ID]                | [Reference type]
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Download csv From Looker                 | ServiceTask_RGVa5HfRLk    | 03e5bb85-4fe6-4682-8e48-45af04a028d5  | 00000000-0000-0000-0000-000000000000  | local
+| Import data into Online Template         | ServiceTask_ra3EguN1JH    | addae6d9-9c01-42e3-b3b4-a73740129007  | 00000000-0000-0000-0000-000000000000  | local
+| Export Valid Shipment data into Excel    | ServiceTask_hO6MgHKban    | 50d0ce62-c743-4de3-9cf2-96542d79a48f  | 00000000-0000-0000-0000-000000000000  | local
+| Get Unique ID and export to template     | ServiceTask_2CTPOwfeeT    | 5eb8391e-4adb-4b7d-9eea-2b7a6e00026d  | 00000000-0000-0000-0000-000000000000  | local
+| Save Template as PDF                     | ServiceTask_XzTawNw5bG    | 70d39501-dd9d-4d99-be87-33ae5254676b  | 00000000-0000-0000-0000-000000000000  | local
+| Login to shipment page and upload corresponding PDF | ServiceTask_lGsTdcJl3z    | 5bc3f8b2-41e1-487e-9485-bcfeb117f58e  | 00000000-0000-0000-0000-000000000000  | local
+| Pull out data in Excel file & Append to record sheet | ServiceTask_6dRzsYrp0V    | 40e239c1-0044-4e11-8c21-c80939aadaac  | 00000000-0000-0000-0000-000000000000  | local
+| Clear all data in online template,Excel file & Template | ServiceTask_oIX0TS56rE    | d5fbf030-a122-4f41-9c7e-cc2757a1cdb2  | 00000000-0000-0000-0000-000000000000  | local
+| Clean up Environment                     | ServiceTask_mO9FdwkaML    | da249c5f-fbef-47a8-9234-18be67bd782c  | 00000000-0000-0000-0000-000000000000  | local
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
